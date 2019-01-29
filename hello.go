@@ -41,10 +41,25 @@ func (f MyFloat) Abs() float64 {
 	return float64(f)
 }
 
+// Interface-Werte: Interface führt die Methode mit einem konkreten Typen aus
+
+// Type Switches
+
+func do(i interface{}) {
+	switch v := i.(type) {
+	case int:
+		fmt.Printf("Twice %v is %v\n", v, v*2)
+	case string:
+		fmt.Printf("%q is %v bytes long\n", v, len(v))
+	default:
+		fmt.Printf("I don't know about type %T!\n", v)
+	}
+}
+
 func main() {
-	var a Abser
-	f := MyFloat(-math.Sqrt2)
-	v := Vertex{3, 4}
+	do(21)
+	do("Hello")
+	do(true)
 	fmt.Println(stringutil.Reverse("!oG ,olleH"))
 
 }
