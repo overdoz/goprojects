@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math"
-	"github.com/user/stringutil"
 )
 
 // Types ###########################################
@@ -72,6 +71,4 @@ func main() {
 	do(21)
 	do("Hello")
 	do(true)
-	fmt.Println(stringutil.Reverse("!oG ,olleH"))
-
 }
