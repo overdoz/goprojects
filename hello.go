@@ -3,15 +3,27 @@ package main
 import (
 	"fmt"
 	"math"
-
 	"github.com/user/stringutil"
 )
 
-// Pointer Empfänger ###############################
+// Types ###########################################
+
+type Person struct {
+	Name string
+	Age  int
+}
 
 type Vertex struct {
 	X, Y float64
 }
+
+type Abser interface {
+	Abs() float64
+}
+
+type MyFloat float64
+
+// Pointer Empfänger ###############################
 
 func (v Vertex) Abs() float64 {
 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
@@ -27,12 +39,6 @@ func (v *Vertex) Scale(f float64) {
 }
 
 // Interface ######################################
-
-type Abser interface {
-	Abs() float64
-}
-
-type MyFloat float64
 
 func (f MyFloat) Abs() float64 {
 	if f < 0 {
@@ -54,6 +60,12 @@ func do(i interface{}) {
 	default:
 		fmt.Printf("I don't know about type %T!\n", v)
 	}
+}
+
+// Stringer 
+
+func (p Person) String() string {
+	return fmt.Sprintf("%v (%v years)", p.Name, p.Age)
 }
 
 func main() {
