@@ -24,6 +24,8 @@ type IPAddr [4]byte
 
 type MyFloat float64
 
+type ErrNegativeSqrt float64
+
 // Pointer Empfänger ###############################
 
 func (v Vertex) Abs() float64 {
@@ -68,29 +70,46 @@ func do(i interface{}) {
 func (p Person) String() string {
 	return fmt.Sprintf("%v (%v years)", p.Name, p.Age)
 }
+
 // Sprintf klappt mit jedem type
 // a := Person{"Arthur Dent", 42}
 // z := Person{"Zaphod Beeblebrox", 9001}
-// fmt.Println(a, z) 
+// fmt.Println(a, z)
 // ------> Output: Arthur Dent (42 years) Zaphod Beeblebrox (9001 years)
 
 func (ip IPAddr) String() string {
 	return fmt.Sprintf("%v.%v.%v.%v", ip[0], ip[1], ip[2], ip[3])
 }
 
-
 // Errors #######################################
 
+func (e ErrNegativeSqrt) Error() string {
+	return fmt.Sprintf("can not Sqrt negative number: %v", float64(e))
+}
 
-
-
+func Sqrt(x float64) (float64, error) {
+	if x < 0 {
+		return 0, ErrNegativeSqrt(x)
+	}
+	z := 1.0
+	for {
+		if math.Abs(z-(z-(z*z-x)/(z*2))) < 0.00000000000001 {
+			return z, nil
+		} else {
+			z = z - (z*z-x)/(z*2)
+		}
+	}
+}
 
 func main() {
 	do(21)
 	do("Hello")
 	do(true)
 
-	// Stringers #################################### 
+	fmt.Println(Sqrt(2))
+	fmt.Println(Sqrt(-2))
+
+	// Stringers ####################################
 	hosts := map[string]IPAddr{
 		"loopback":  {127, 0, 0, 1},
 		"googleDNS": {8, 8, 8, 8},
