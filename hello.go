@@ -26,6 +26,8 @@ type MyFloat float64
 
 type ErrNegativeSqrt float64
 
+type MyReader struct{}
+
 // Pointer Empfänger ###############################
 
 func (v Vertex) Abs() float64 {
@@ -42,6 +44,8 @@ func (v *Vertex) Scale(f float64) {
 }
 
 // Interface ######################################
+
+// Was machen Interfaces genau?
 
 func (f MyFloat) Abs() float64 {
 	if f < 0 {
@@ -101,7 +105,21 @@ func Sqrt(x float64) (float64, error) {
 	}
 }
 
+// Reader ######################################
+
+// Was macht der Reader? Warum nimmt er ein Byte Array?
+
+// Übung:
+func (r MyReader) Read(s []byte) (n int, err error) {
+	s = s[:cap(s)]
+	for i := range s {
+		s[i] = 'A'
+	}
+	return cap(s), nil
+}
+
 func main() {
+
 	do(21)
 	do("Hello")
 	do(true)
