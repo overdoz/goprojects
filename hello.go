@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/user/exercise"
+	// "github.com/user/exercise"
 	"math"
 )
 
@@ -57,6 +57,20 @@ func (f MyFloat) Abs() float64 {
 		return float64(-f)
 	}
 	return float64(f)
+}
+
+type geometry interface {
+	area() float64
+}
+
+func (r rect) area() float64 {
+	fmt.Println(r)
+	return r.width * r.height
+}
+
+func measure(g geometry) {
+	fmt.Println(g)
+	fmt.Println(g.area)
 }
 
 // Interface-Werte: Interface führt die Methode mit einem konkreten Typen aus
@@ -124,6 +138,10 @@ func (r MyReader) Read(s []byte) (n int, err error) {
 }
 
 func main() {
+
+	r := rect{width: 10, height: 23}
+
+	measure(r)
 
 	do(21)
 	do("Hello")
