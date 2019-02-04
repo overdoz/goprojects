@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/user/exercise"
 	"math"
 )
 
@@ -18,6 +19,10 @@ type Vertex struct {
 
 type Abser interface {
 	Abs() float64
+}
+
+type rect struct {
+	width, height float64
 }
 
 type IPAddr [4]byte
