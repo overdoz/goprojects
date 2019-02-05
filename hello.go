@@ -4,6 +4,7 @@ import (
 	"fmt"
 	// "github.com/user/exercise"
 	"math"
+	"time"
 )
 
 // Types ###########################################
@@ -137,10 +138,26 @@ func (r MyReader) Read(s []byte) (n int, err error) {
 	return cap(s), nil
 }
 
+// Goroutines
+
+func say(s string) {
+	for i := 0; i < 5; i++ {
+		fmt.Println(s)
+		time.Sleep(time.Millisecond * 1000)
+	}
+}
+
+// ########################### MAIN METHODE #####################################################
+
 func main() {
 
-	r := rect{width: 10, height: 23}
+	// Goroutines
 
+	go say("hello")
+	say("world")
+
+	// Interface
+	r := rect{width: 10, height: 23}
 	measure(r)
 
 	do(21)
@@ -150,7 +167,7 @@ func main() {
 	fmt.Println(Sqrt(2))
 	fmt.Println(Sqrt(-2))
 
-	// Stringers ####################################
+	// Stringers
 	hosts := map[string]IPAddr{
 		"loopback":  {127, 0, 0, 1},
 		"googleDNS": {8, 8, 8, 8},
