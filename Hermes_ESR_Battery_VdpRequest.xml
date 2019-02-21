@@ -1,0 +1,763 @@
+<v:vdpRequest v:schemaVersion="2.0.3"
+xmlns:v="http://diagnostics.xsd.corpintra.net/vdp"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://diagnostics.xsd.corpintra.net/vdp VDP-Access-2.0.3.xsd">
+  <v:header>
+    <v:action v:name="DDA">
+      <v:subAction v:name="ESR"/>
+    </v:action>
+    <v:eeSnapshot>
+      <v:eesVersion>3.1.0</v:eesVersion>
+    </v:eeSnapshot>
+    <v:trackingId>Smoketest_${=request.name}</v:trackingId>
+  </v:header>
+  <v:payload>
+
+<vdr:vehicleData xmlns:vdr="http://diagnostics.xsd.corpintra.net/vehicleData" xmlns="http://diagnostics.xsd.corpintra.net/vdp/fesjobctxt" xmlns:ns2="http://diagnostics.xsd.corpintra.net/odcKeyData" xmlns:ns3="http://diagnostics.xsd.corpintra.net/RDSCommonTypes" xmlns:ns4="http://diagnostics.xsd.corpintra.net/CVDS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" vdr:schemaVersion="2.2.0" vdr:vin="WDD2130041A000000">
+  <vdr:device vdr:tcu="HERMES"/>
+  <vdr:odo>
+    <vdr:value>11283</vdr:value>
+  </vdr:odo>
+  <vdr:kmatrixver vdr:status="0" vdr:timestamp="1493731036">
+    <vdr:value>2015/05/-/2.3/diag</vdr:value>
+  </vdr:kmatrixver>
+  <vdr:diagnosis>
+    <vdr:tcu>
+      <vdr:imei>3594260600194150</vdr:imei>
+      <vdr:diagnosticResult>
+        <ns3:tcuHWPartNumber>2139019503001FF</ns3:tcuHWPartNumber>
+        <ns3:rdaSWPartNumber>2139022106FFFFF</ns3:rdaSWPartNumber>
+        <ns3:rdlibSWPartNumber>0009021121000FF</ns3:rdlibSWPartNumber>
+        <ns3:creationTimeStart>
+          <ns3:numSeconds>1493731027</ns3:numSeconds>
+          <ns3:numMilliseconds>931</ns3:numMilliseconds>
+        </ns3:creationTimeStart>
+        <ns3:storageTime>
+          <ns3:numSeconds>1493731044</ns3:numSeconds>
+          <ns3:numMilliseconds>289</ns3:numMilliseconds>
+        </ns3:storageTime>
+        <ns3:generalConfigParameters>
+          <ns3:rdActive>1</ns3:rdActive>
+          <ns3:rdPermission>1</ns3:rdPermission>
+          <ns3:delayIgnitionOn>90</ns3:delayIgnitionOn>
+          <ns3:delayTesterPresent>0</ns3:delayTesterPresent>
+          <ns3:delayRoe>10</ns3:delayRoe>
+          <ns3:numberMaxFailures>100</ns3:numberMaxFailures>
+          <ns3:timeoutDriverInteraction>30</ns3:timeoutDriverInteraction>
+        </ns3:generalConfigParameters>
+        <ns3:scriptConfigParameters>
+          <ns3:partNumber>0009021621000FF</ns3:partNumber>
+          <ns3:jobEnable>0</ns3:jobEnable>
+          <ns3:ignitionOnTriggerEnable>1</ns3:ignitionOnTriggerEnable>
+          <ns3:ignitionOnDelay>0</ns3:ignitionOnDelay>
+          <ns3:periodicTriggerEnabled>0</ns3:periodicTriggerEnabled>
+          <ns3:periodicDelay>0</ns3:periodicDelay>
+          <ns3:rcallTriggerEnable>2</ns3:rcallTriggerEnable>
+          <ns3:icallTriggerEnable>0</ns3:icallTriggerEnable>
+          <ns3:toolDisconnectTriggerEnable>0</ns3:toolDisconnectTriggerEnable>
+          <ns3:roeTriggerEnable>0</ns3:roeTriggerEnable>
+          <ns3:suppressionDelayAfterReportTx>
+            <ns3:day>0</ns3:day>
+            <ns3:hour>0</ns3:hour>
+            <ns3:minute>0</ns3:minute>
+          </ns3:suppressionDelayAfterReportTx>
+          <ns3:validityEnabled>0</ns3:validityEnabled>
+          <ns3:validityBeginTime>
+            <ns3:numSeconds>0</ns3:numSeconds>
+            <ns3:numMilliseconds>0</ns3:numMilliseconds>
+          </ns3:validityBeginTime>
+          <ns3:validityEndTime>
+            <ns3:numSeconds>0</ns3:numSeconds>
+            <ns3:numMilliseconds>0</ns3:numMilliseconds>
+          </ns3:validityEndTime>
+          <ns3:maxExecutionCount>0</ns3:maxExecutionCount>
+          <ns3:maxExecutionCountIgnCycle>0</ns3:maxExecutionCountIgnCycle>
+          <ns3:maxTransmissionCount>0</ns3:maxTransmissionCount>
+        </ns3:scriptConfigParameters>
+        <ns3:executionScheduleInformation>
+          <ns3:executionMode>1</ns3:executionMode>
+          <ns3:reportWithTimestamps>0</ns3:reportWithTimestamps>
+          <ns3:numTriggersSources>1</ns3:numTriggersSources>
+          <ns3:triggerDataset>
+            <ns3:triggerEvent>01</ns3:triggerEvent>
+            <ns3:triggerEventDetail>0000</ns3:triggerEventDetail>
+            <ns3:timeFirstTriggerOccurred>
+              <ns3:numSeconds>1493730908</ns3:numSeconds>
+              <ns3:numMilliseconds>415</ns3:numMilliseconds>
+            </ns3:timeFirstTriggerOccurred>
+            <ns3:timeLastTriggerOccurred>
+              <ns3:numSeconds>1493730908</ns3:numSeconds>
+              <ns3:numMilliseconds>415</ns3:numMilliseconds>
+            </ns3:timeLastTriggerOccurred>
+            <ns3:numberOfOccurrences>1</ns3:numberOfOccurrences>
+          </ns3:triggerDataset>
+        </ns3:executionScheduleInformation>
+        <ns3:transmissionScheduleInformation>
+          <ns3:executionMode>1</ns3:executionMode>
+          <ns3:reportWithTimestamps>0</ns3:reportWithTimestamps>
+          <ns3:numTriggersSources>1</ns3:numTriggersSources>
+          <ns3:triggerDataset>
+            <ns3:triggerEvent>01</ns3:triggerEvent>
+            <ns3:triggerEventDetail>0000</ns3:triggerEventDetail>
+            <ns3:timeFirstTriggerOccurred>
+              <ns3:numSeconds>1493731044</ns3:numSeconds>
+              <ns3:numMilliseconds>407</ns3:numMilliseconds>
+            </ns3:timeFirstTriggerOccurred>
+            <ns3:timeLastTriggerOccurred>
+              <ns3:numSeconds>1493731044</ns3:numSeconds>
+              <ns3:numMilliseconds>407</ns3:numMilliseconds>
+            </ns3:timeLastTriggerOccurred>
+            <ns3:numberOfOccurrences>1</ns3:numberOfOccurrences>
+          </ns3:triggerDataset>
+        </ns3:transmissionScheduleInformation>
+        <ns3:log>
+          <rdsc:longRawDataLen xmlns:rdsc="http://diagnostics.xsd.corpintra.net/RDSCommonTypes" xmlns:jc="http://diagnostics.xsd.corpintra.net/vdp/fesjobctxt">0</rdsc:longRawDataLen>
+          <rdsc:longRawData xmlns:rdsc="http://diagnostics.xsd.corpintra.net/RDSCommonTypes" xmlns:jc="http://diagnostics.xsd.corpintra.net/vdp/fesjobctxt">Started execution of /cust/remotediag/script5/Script.lua
+HEADER:NONE:LOG_LEVEL:6
+HEADER:NONE:SAFE_MODE_REQUIRED:false
+HEADER:NONE:RELEASE_DATE:0x01337A75
+HEADER:NONE:SCRIPT_TYPE:0
+HEADER:NONE:RDLIB_VERSION:0x000F2900
+HEADER:NONE:SCRIPT_VERSION:0x000F2700
+writeLogLine:NONE:5:Running Procedure%3A [5] Battery Data
+getRDAVersionInfo:action11:0:0x00100406:0x000E1100
+allocateDiagnosticChannel:action12:0:0
+writeLogLine:VehInfo:5:Vehicle Information found. Vehicle Line%3A BR213 / Model Year%3A 2016 / Country Code%3A DEU
+writeLogLine:VehInfo:5:Identified EE-Architecture%3A 2.3
+writeLogLine:Trigger:5:Script triggerd by trigger%3A 010000
+writeLogLine:Trigger:5:Script triggerd by trigger_type 01 and trigger_detail 0000
+writeLogLine:VarCod:5:Start reading global variant coding
+getEcuListEntryByAddress:GLOBALVAR_2:0x00000607::7:0x00000607:0x00000587:::1:2
+sendRequest:GLOBALVAR_2:0x00000607:0x00000587::1:0:0x220403:0:0x620403020068F7011804
+getEcuListEntryByAddress:GLOBALVAR_2:0x00000607::7:0x00000607:0x00000587:::1:2
+sendRequest:GLOBALVAR_2:0x00000607:0x00000587::1:0:0x220404:0:0x62040441003A30002037
+getEcuListEntryByAddress:GLOBALVAR_2:0x00000607::7:0x00000607:0x00000587:::1:2
+sendRequest:GLOBALVAR_2:0x00000607:0x00000587::1:0:0x220405:0:0x62040503000414000080
+getEcuListEntryByAddress:GLOBALVAR_2:0x00000607::7:0x00000607:0x00000587:::1:2
+sendRequest:GLOBALVAR_2:0x00000607:0x00000587::1:0:0x220406:0:0x620406045F8DD210F000
+writeLogLine:GLOBALVAR_2:5:Stop reading global variant coding
+getEcuListLength:readID:0:108
+writeLogLine:readID:5:CAN-ID [0x00000600]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000601]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000602]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000603]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000604]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000605]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000606]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000607]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000608]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000609]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000060A]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000060B]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000060C]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000060D]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000060E]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000610]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000611]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000612]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000614]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000615]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000616]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000617]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000618]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000619]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000061A]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000061B]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000061C]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000061E]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000061F]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000620]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000621]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000622]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000625]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000626]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000062A]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000062F]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000630]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000632]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000634]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000635]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000636]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000637]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000638]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000639]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000063A]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000063B]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000063D]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000063F]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000640]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000641]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000642]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000643]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000644]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000645]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000646]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000647]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000649]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000064A]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000064B]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000064D]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000064E]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000064F]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000650]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000651]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000652]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000653]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000654]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000655]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000656]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000657]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000065C]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000065E]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000065F]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000663]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000666]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000710]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000711]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000712]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000714]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000740]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000741]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000742]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000743]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000744]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000745]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000746]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000748]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000749]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000761]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000763]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000765]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000766]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000768]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000076A]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000076C]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000076E]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000770]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000772]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x00000779]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x0000077A]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x000007E0]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x000007E1]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x000007E2]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x000007E3]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x000007E4]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x000007E5]%3AECUAvailable [2]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x000007E6]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:CAN-ID [0x000007E7]%3AECUAvailable [1]%3AProtocol [1]
+writeLogLine:readID:5:Number of available ECUs%3A [47]
+sendRequestStored:readID:0x00000600:0x00000580::1:0:0x22F100:0:0x62F10002030C01
+sendRequestStored:readID:0x00000600:0x00000580::1:0:0x22F111:0:0x62F11132313339303132353030
+sendRequestStored:readID:0x00000600:0x00000580::1:0:0x22F121:0:0x62F12132313339303235313038
+sendRequestStored:readID:0x00000600:0x00000580::1:0:0x22F150:0:0x62F1500E1700
+sendRequestStored:readID:0x00000600:0x00000580::1:0:0x22F151:0:0x62F151100E00
+sendRequestStored:readID:0x00000600:0x00000580::1:0:0x22F153:0:0x62F1530E0B00
+sendRequestStored:readID:0x00000600:0x00000580::1:0:0x22F154:0:0x62F1540021
+sendRequestStored:readID:0x00000600:0x00000580::1:0:0x22F155:0:0x62F1550021
+sendRequestStored:readID:0x00000600:0x00000580::1:0:0x22F18C:0:0x62F18C00000000000000000EA6
+sendRequestStored:readID:0x00000602:0x00000582::1:0:0x22F100:0:0x62F10002030C01
+sendRequestStored:readID:0x00000602:0x00000582::1:0:0x22F111:0:0x62F11132313339303132363030
+sendRequestStored:readID:0x00000602:0x00000582::1:0:0x22F121:0:0x62F12132313339303235313038
+sendRequestStored:readID:0x00000602:0x00000582::1:0:0x22F150:0:0x62F1500E1700
+sendRequestStored:readID:0x00000602:0x00000582::1:0:0x22F151:0:0x62F151100E00
+sendRequestStored:readID:0x00000602:0x00000582::1:0:0x22F153:0:0x62F1530E0B00
+sendRequestStored:readID:0x00000602:0x00000582::1:0:0x22F154:0:0x62F1540021
+sendRequestStored:readID:0x00000602:0x00000582::1:0:0x22F155:0:0x62F1550021
+sendRequestStored:readID:0x00000602:0x00000582::1:0:0x22F18C:0:0x62F18C00000000000000001D09
+sendRequestStored:readID:0x00000604:0x00000584::1:0:0x22F100:0:0x62F10002030C01
+sendRequestStored:readID:0x00000604:0x00000584::1:0:0x22F111:0:0x62F11132313339303132393030
+sendRequestStored:readID:0x00000604:0x00000584::1:0:0x22F121:0:0x62F12132313339303232333037
+sendRequestStored:readID:0x00000604:0x00000584::1:0:0x22F150:0:0x62F1500D3100
+sendRequestStored:readID:0x00000604:0x00000584::1:0:0x22F151:0:0x62F151100E00
+sendRequestStored:readID:0x00000604:0x00000584::1:0:0x22F153:0:0x62F1530E0B00
+sendRequestStored:readID:0x00000604:0x00000584::1:0:0x22F154:0:0x62F1540021
+sendRequestStored:readID:0x00000604:0x00000584::1:0:0x22F155:0:0x62F1550021
+sendRequestStored:readID:0x00000604:0x00000584::1:0:0x22F18C:0:0x62F18C000000000000000010FE
+sendRequestStored:readID:0x00000606:0x00000586::1:0:0x22F100:0:0x62F10002030C01
+sendRequestStored:readID:0x00000606:0x00000586::1:0:0x22F111:0:0x62F11132313339303133303030
+sendRequestStored:readID:0x00000606:0x00000586::1:0:0x22F121:0:0x62F12132313339303232333037
+sendRequestStored:readID:0x00000606:0x00000586::1:0:0x22F150:0:0x62F1500D3100
+sendRequestStored:readID:0x00000606:0x00000586::1:0:0x22F151:0:0x62F151100E00
+sendRequestStored:readID:0x00000606:0x00000586::1:0:0x22F153:0:0x62F1530E0B00
+sendRequestStored:readID:0x00000606:0x00000586::1:0:0x22F154:0:0x62F1540021
+sendRequestStored:readID:0x00000606:0x00000586::1:0:0x22F155:0:0x62F1550021
+sendRequestStored:readID:0x00000606:0x00000586::1:0:0x22F18C:0:0x62F18C00000000000000000DD3
+sendRequestStored:readID:0x00000607:0x00000587::1:0:0x22F100:0:0x62F10002F00501
+sendRequestStored:readID:0x00000607:0x00000587::1:0:0x22F111:0:0x62F11132313339303137333033
+sendRequestStored:readID:0x00000607:0x00000587::1:0:0x22F121:0:0x62F12132313339303233353036
+sendRequestStored:readID:0x00000607:0x00000587::1:0:0x22F150:0:0x62F1500F0800
+sendRequestStored:readID:0x00000607:0x00000587::1:0:0x22F151:0:0x62F1510F0F14
+sendRequestStored:readID:0x00000607:0x00000587::1:0:0x22F153:0:0x62F1530F0800
+sendRequestStored:readID:0x00000607:0x00000587::1:0:0x22F154:0:0x62F1540007
+sendRequestStored:readID:0x00000607:0x00000587::1:0:0x22F155:0:0x62F1550007
+sendRequestStored:readID:0x00000607:0x00000587::1:0:0x22F18C:0:0x62F18C600001886515401412012201
+sendRequestStored:readID:0x00000609:0x00000589::1:0:0x22F100:0:0x62F10002030D01
+sendRequestStored:readID:0x00000609:0x00000589::1:0:0x22F111:0:0x62F11132313339303134323033
+sendRequestStored:readID:0x00000609:0x00000589::1:0:0x22F121:0:0x62F12132313339303235303034
+sendRequestStored:readID:0x00000609:0x00000589::1:0:0x22F150:0:0x62F1500F0301
+sendRequestStored:readID:0x00000609:0x00000589::1:0:0x22F151:0:0x62F1510F2C00
+sendRequestStored:readID:0x00000609:0x00000589::1:0:0x22F153:0:0x62F1530F0604
+sendRequestStored:readID:0x00000609:0x00000589::1:0:0x22F154:0:0x62F1540015
+sendRequestStored:readID:0x00000609:0x00000589::1:0:0x22F155:0:0x62F1550015
+sendRequestStored:readID:0x00000609:0x00000589::1:0:0x22F18C:0:0x62F18C213900830515150901940900
+sendRequestStored:readID:0x0000060B:0x00000000::1:0:0x22F100:0:0x62F10000043501
+sendRequestStored:readID:0x0000060B:0x00000000::1:0:0x22F111:0:0x62F11132313339303139353033
+sendRequestStored:readID:0x0000060B:0x00000000::1:0:0x22F121:0:0x62F12132313339303232313036303030393032313132313030303930323132323130303039303231333231303030393032313432313030303930323135323130303039303231363231303030393032353832373030303930323539323730303039303236303237303030393032363132373030303930323632323730303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030
+sendRequestStored:readID:0x0000060B:0x00000000::1:0:0x22F150:0:0x62F1500F2200
+sendRequestStored:readID:0x0000060B:0x00000000::1:0:0x22F151:0:0x62F1511004060F29000F27000F27000F27000F27000F27000F27000F27000F27000F27000F2700FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+sendRequestStored:readID:0x0000060B:0x00000000::1:0:0x22F153:0:0x62F153100406
+sendRequestStored:readID:0x0000060B:0x00000000::1:0:0x22F154:0:0x62F1540084
+sendRequestStored:readID:0x0000060B:0x00000000::1:0:0x22F155:0:0x62F1550084001A001A001A001A001A001A001A001A001A001A001A001A001A001A001A001A001A001A001A001A001A
+sendRequestStored:readID:0x0000060B:0x00000000::1:0:0x22F18C:0:0x62F18C4D3039304653303031373931
+sendRequestStored:readID:0x0000060D:0x0000058D::1:0:0x22F100:0:0x62F10002030D01
+sendRequestStored:readID:0x0000060D:0x0000058D::1:0:0x22F111:0:0x62F11132313339303134303033
+sendRequestStored:readID:0x0000060D:0x0000058D::1:0:0x22F121:0:0x62F12132313339303235323034
+sendRequestStored:readID:0x0000060D:0x0000058D::1:0:0x22F150:0:0x62F1500F0201
+sendRequestStored:readID:0x0000060D:0x0000058D::1:0:0x22F151:0:0x62F1510F2D01
+sendRequestStored:readID:0x0000060D:0x0000058D::1:0:0x22F153:0:0x62F1530F0704
+sendRequestStored:readID:0x0000060D:0x0000058D::1:0:0x22F154:0:0x62F1540015
+sendRequestStored:readID:0x0000060D:0x0000058D::1:0:0x22F155:0:0x62F1550015
+sendRequestStored:readID:0x0000060D:0x0000058D::1:0:0x22F18C:0:0x62F18C213900870515150901000441
+sendRequestStored:readID:0x00000611:0x00000591::1:0:0x22F100:0:0x62F10000821E01
+sendRequestStored:readID:0x00000611:0x00000591::1:0:0x22F111:0:0x62F11132313339303135363033
+sendRequestStored:readID:0x00000611:0x00000591::1:0:0x22F121:0:0x62F12132313339303235323033
+sendRequestStored:readID:0x00000611:0x00000591::1:0:0x22F150:0:0x62F1500C1901
+sendRequestStored:readID:0x00000611:0x00000591::1:0:0x22F151:0:0x62F1510F2800
+sendRequestStored:readID:0x00000611:0x00000591::1:0:0x22F153:0:0x62F1530D3100
+sendRequestStored:readID:0x00000611:0x00000591::1:0:0x22F154:0:0x62F1540015
+sendRequestStored:readID:0x00000611:0x00000591::1:0:0x22F155:0:0x62F1550015
+sendRequestStored:readID:0x00000611:0x00000591::1:0:0x22F18C:0:0x62F18C30303030303031303338
+sendRequestStored:readID:0x00000615:0x00000595::1:0:0x22F100:0:0x62F10000070201
+sendRequestStored:readID:0x00000615:0x00000595::1:0:0x22F111:0:0x62F11132313339303135353030
+sendRequestStored:readID:0x00000615:0x00000595::1:0:0x22F121:0:0x62F12132313339303236383036
+sendRequestStored:readID:0x00000615:0x00000595::1:0:0x22F150:0:0x62F1500E2B00
+sendRequestStored:readID:0x00000615:0x00000595::1:0:0x22F151:0:0x62F1510F0401
+sendRequestStored:readID:0x00000615:0x00000595::1:0:0x22F153:0:0x62F1530E2300
+sendRequestStored:readID:0x00000615:0x00000595::1:0:0x22F154:0:0x62F1540021
+sendRequestStored:readID:0x00000615:0x00000595::1:0:0x22F155:0:0x62F1550021
+sendRequestStored:readID:0x00000615:0x00000595::1:0:0x22F18C:0:0x62F18C20150627000001438300
+sendRequestStored:readID:0x0000061C:0x0000059C::1:0:0x22F100:0:0x62F10000052101
+sendRequestStored:readID:0x0000061C:0x0000059C::1:0:0x22F111:0:0x62F11132313339303134313031
+sendRequestStored:readID:0x0000061C:0x0000059C::1:0:0x22F121:0:0x62F12132313339303231323032
+sendRequestStored:readID:0x0000061C:0x0000059C::1:0:0x22F150:0:0x62F1500E2900
+sendRequestStored:readID:0x0000061C:0x0000059C::1:0:0x22F151:0:0x62F1510F1F00
+sendRequestStored:readID:0x0000061C:0x0000059C::1:0:0x22F153:0:0x62F1530F1200
+sendRequestStored:readID:0x0000061C:0x0000059C::1:0:0x22F154:0:0x62F1540012
+sendRequestStored:readID:0x0000061C:0x0000059C::1:0:0x22F155:0:0x62F1550012
+sendRequestStored:readID:0x0000061C:0x0000059C::1:0:0x22F18C:0:0x62F18C32313339303635363032303231353038323230303338
+sendRequestStored:readID:0x0000061F:0x0000059F::1:0:0x22F100:0:0x62F10002020001
+sendRequestStored:readID:0x0000061F:0x0000059F::1:0:0x22F111:0:0x62F11132313339303136353034
+sendRequestStored:readID:0x0000061F:0x0000059F::1:0:0x22F121:0:0x62F12132313339303232363035
+sendRequestStored:readID:0x0000061F:0x0000059F::1:0:0x22F150:0:0x62F1500F2500
+sendRequestStored:readID:0x0000061F:0x0000059F::1:0:0x22F151:0:0x62F1510F3300
+sendRequestStored:readID:0x0000061F:0x0000059F::1:0:0x22F153:0:0x62F1530F1C00
+sendRequestStored:readID:0x0000061F:0x0000059F::1:0:0x22F154:0:0x62F1540040
+sendRequestStored:readID:0x0000061F:0x0000059F::1:0:0x22F155:0:0x62F1550040
+sendRequestStored:readID:0x0000061F:0x0000059F::1:0:0x22F18C:0:0x62F18C3032363133303135354C
+sendRequestStored:readID:0x00000620:0x000005A0::1:0:0x22F100:0:0x62F10000003101
+sendRequestStored:readID:0x00000620:0x000005A0::1:0:0x22F111:0:0x62F11132313339303138313033
+sendRequestStored:readID:0x00000620:0x000005A0::1:0:0x22F121:0:0x62F12132313339303232393034
+sendRequestStored:readID:0x00000620:0x000005A0::1:0:0x22F150:0:0x62F1500E2F01
+sendRequestStored:readID:0x00000620:0x000005A0::1:0:0x22F151:0:0x62F1510F2507
+sendRequestStored:readID:0x00000620:0x000005A0::1:0:0x22F153:0:0x62F1530F0F00
+sendRequestStored:readID:0x00000620:0x000005A0::1:0:0x22F154:0:0x62F1540043
+sendRequestStored:readID:0x00000620:0x000005A0::1:0:0x22F155:0:0x62F1550043
+sendRequestStored:readID:0x00000620:0x000005A0::1:0:0x22F18C:0:0x62F18C3715000042011006
+sendRequestStored:readID:0x00000621:0x000005A1::1:0:0x22F100:0:0x62F100000B0801
+sendRequestStored:readID:0x00000621:0x000005A1::1:0:0x22F111:0:0x62F11130303039303139323033
+sendRequestStored:readID:0x00000621:0x000005A1::1:0:0x22F121:0:0x62F12130303039303236303333
+sendRequestStored:readID:0x00000621:0x000005A1::1:0:0x22F150:0:0x62F1500F0600
+sendRequestStored:readID:0x00000621:0x000005A1::1:0:0x22F151:0:0x62F1510F3100
+sendRequestStored:readID:0x00000621:0x000005A1::1:0:0x22F153:0:0x62F1530E1303
+sendRequestStored:readID:0x00000621:0x000005A1::1:0:0x22F154:0:0x62F1540007
+sendRequestStored:readID:0x00000621:0x000005A1::1:0:0x22F155:0:0x62F1550007
+sendRequestStored:readID:0x00000621:0x000005A1::1:0:0x22F18C:0:0x62F18C3931303632504450303031304E
+sendRequestStored:readID:0x00000637:0x000005B7::1:0:0x22F100:0:0x62F10000000701
+sendRequestStored:readID:0x00000637:0x000005B7::1:0:0x22F111:0:0x62F11132313339303134353033
+sendRequestStored:readID:0x00000637:0x000005B7::1:0:0x22F121:0:0x62F121323035393032383730393230353930323737303530303030303030303030
+sendRequestStored:readID:0x00000637:0x000005B7::1:0:0x22F150:0:0x62F1500F0700
+sendRequestStored:readID:0x00000637:0x000005B7::1:0:0x22F151:0:0x62F1510F24030E26000F0700
+sendRequestStored:readID:0x00000637:0x000005B7::1:0:0x22F153:0:0x62F1530F0700
+sendRequestStored:readID:0x00000637:0x000005B7::1:0:0x22F154:0:0x62F154009E
+sendRequestStored:readID:0x00000637:0x000005B7::1:0:0x22F155:0:0x62F155009E009E009E
+sendRequestStored:readID:0x00000637:0x000005B7::1:0:0x22F18C:0:0x62F18C30303030303031323830
+sendRequestStored:readID:0x00000638:0x000005B8::1:0:0x22F100:0:0x62F10002600401
+sendRequestStored:readID:0x00000638:0x000005B8::1:0:0x22F111:0:0x62F11132313339303135383034
+sendRequestStored:readID:0x00000638:0x000005B8::1:0:0x22F121:0:0x62F121323133393034353230303231333930323235303832313339303238333036323133393032323730383231333930333033303132313339303330343031
+sendRequestStored:readID:0x00000638:0x000005B8::1:0:0x22F150:0:0x62F1500F1400
+sendRequestStored:readID:0x00000638:0x000005B8::1:0:0x22F151:0:0x62F151100A00100A0010070010091F100A00100A00
+sendRequestStored:readID:0x00000638:0x000005B8::1:0:0x22F153:0:0x62F153100A00
+sendRequestStored:readID:0x00000638:0x000005B8::1:0:0x22F154:0:0x62F1540085
+sendRequestStored:readID:0x00000638:0x000005B8::1:0:0x22F155:0:0x62F15500850085001A00C800850085
+sendRequestStored:readID:0x00000638:0x000005B8::1:0:0x22F18C:0:0x62F18C4D45393638304639303531323031
+sendRequestStored:readID:0x0000063A:0x000005BA::1:0:0x22F100:0:0x62F10002050001
+sendRequestStored:readID:0x0000063A:0x000005BA::1:0:0x22F111:0:0x62F11132313339303130363033
+sendRequestStored:readID:0x0000063A:0x000005BA::1:0:0x22F121:0:0x62F12132313339303235333031
+sendRequestStored:readID:0x0000063A:0x000005BA::1:0:0x22F150:0:0x62F1500D1100
+sendRequestStored:readID:0x0000063A:0x000005BA::1:0:0x22F151:0:0x62F1510E3202
+sendRequestStored:readID:0x0000063A:0x000005BA::1:0:0x22F153:0:0x62F1530D1800
+sendRequestStored:readID:0x0000063A:0x000005BA::1:0:0x22F154:0:0x62F1540043
+sendRequestStored:readID:0x0000063A:0x000005BA::1:0:0x22F155:0:0x62F1550043
+sendRequestStored:readID:0x0000063A:0x000005BA::1:0:0x22F18C:0:0x62F18C39150000968500020000
+sendRequestStored:readID:0x0000063B:0x000005BB::1:0:0x22F100:0:0x62F10000000401
+sendRequestStored:readID:0x0000063B:0x000005BB::1:0:0x22F111:0:0x62F11132313339303135323034
+sendRequestStored:readID:0x0000063B:0x000005BB::1:0:0x22F121:0:0x62F1213231333930323232303530303030303030303030
+sendRequestStored:readID:0x0000063B:0x000005BB::1:0:0x22F150:0:0x62F1500F2000
+sendRequestStored:readID:0x0000063B:0x000005BB::1:0:0x22F151:0:0x62F1510F3000000000
+sendRequestStored:readID:0x0000063B:0x000005BB::1:0:0x22F153:0:0x62F1530F0600
+sendRequestStored:readID:0x0000063B:0x000005BB::1:0:0x22F154:0:0x62F154009E
+sendRequestStored:readID:0x0000063B:0x000005BB::1:0:0x22F155:0:0x62F155009E009E
+sendRequestStored:readID:0x0000063B:0x000005BB::1:0:0x22F18C:0:0x62F18C3030303030303030303030313232
+sendRequestStored:readID:0x00000640:0x000005C0::1:0:0x22F100:0:0x62F10000070101
+sendRequestStored:readID:0x00000640:0x000005C0::1:0:0x22F111:0:0x62F11132313339303133313031
+sendRequestStored:readID:0x00000640:0x000005C0::1:0:0x22F121:0:0x62F12132313339303234363032
+sendRequestStored:readID:0x00000640:0x000005C0::1:0:0x22F150:0:0x62F1500E2400
+sendRequestStored:readID:0x00000640:0x000005C0::1:0:0x22F151:0:0x62F1510F1000
+sendRequestStored:readID:0x00000640:0x000005C0::1:0:0x22F153:0:0x62F1530E1900
+sendRequestStored:readID:0x00000640:0x000005C0::1:0:0x22F154:0:0x62F1540027
+sendRequestStored:readID:0x00000640:0x000005C0::1:0:0x22F155:0:0x62F1550027
+sendRequestStored:readID:0x00000640:0x000005C0::1:0:0x22F18C:0:0x62F18C15080400090001630000
+sendRequestStored:readID:0x00000641:0x000005C1::1:0:0x22F100:0:0x62F10000410401
+sendRequestStored:readID:0x00000641:0x000005C1::1:0:0x22F111:0:0x62F11132313339303134363034
+sendRequestStored:readID:0x00000641:0x000005C1::1:0:0x22F121:0:0x62F12132313339303432363030323133393032383430333231333930323835303332313339303238363033323133393032383730333231333930323838303332313339303238393033323133393032393030333231333930323931303332313339303239323033
+sendRequestStored:readID:0x00000641:0x000005C1::1:0:0x22F150:0:0x62F1500F2400
+sendRequestStored:readID:0x00000641:0x000005C1::1:0:0x22F151:0:0x62F1510F28000F28000F28000F28000F28000F28000F28000F28000F28000F2800
+sendRequestStored:readID:0x00000641:0x000005C1::1:0:0x22F153:0:0x62F1530F2800
+sendRequestStored:readID:0x00000641:0x000005C1::1:0:0x22F154:0:0x62F154009E
+sendRequestStored:readID:0x00000641:0x000005C1::1:0:0x22F155:0:0x62F155009E009E009E009E009E009E009E009E009E009E
+sendRequestStored:readID:0x00000642:0x000005C2::1:0:0x22F100:0:0x62F10000030201
+sendRequestStored:readID:0x00000642:0x000005C2::1:0:0x22F111:0:0x62F11132313339303134373034
+sendRequestStored:readID:0x00000642:0x000005C2::1:0:0x22F121:0:0x62F12132313339303233393034
+sendRequestStored:readID:0x00000642:0x000005C2::1:0:0x22F150:0:0x62F1500F2000
+sendRequestStored:readID:0x00000642:0x000005C2::1:0:0x22F151:0:0x62F1510F2801
+sendRequestStored:readID:0x00000642:0x000005C2::1:0:0x22F153:0:0x62F1530E2C00
+sendRequestStored:readID:0x00000642:0x000005C2::1:0:0x22F154:0:0x62F154009E
+sendRequestStored:readID:0x00000642:0x000005C2::1:0:0x22F155:0:0x62F155009E
+sendRequestStored:readID:0x00000642:0x000005C2::1:0:0x22F18C:0:0x62F18C30303030303030303339
+sendRequestStored:readID:0x00000645:0x000005C5::1:0:0x22F100:0:0x62F10002000101
+sendRequestStored:readID:0x00000645:0x000005C5::1:0:0x22F111:0:0x62F11132313339303130313034
+sendRequestStored:readID:0x00000645:0x000005C5::1:0:0x22F121:0:0x62F121323133393032383230323231333930333832303032313339303335393030
+sendRequestStored:readID:0x00000645:0x000005C5::1:0:0x22F150:0:0x62F1500E2D02
+sendRequestStored:readID:0x00000645:0x000005C5::1:0:0x22F151:0:0x62F1510F1F000F30000F2100
+sendRequestStored:readID:0x00000645:0x000005C5::1:0:0x22F153:0:0x62F1530F1300
+sendRequestStored:readID:0x00000645:0x000005C5::1:0:0x22F154:0:0x62F154009E
+sendRequestStored:readID:0x00000645:0x000005C5::1:0:0x22F155:0:0x62F155009E009E009E
+sendRequestStored:readID:0x00000645:0x000005C5::1:0:0x22F18C:0:0x62F18C5430345858323337353135303832353330333131
+sendRequestStored:readID:0x00000647:0x000005C7::1:0:0x22F100:0:0x62F10000070101
+sendRequestStored:readID:0x00000647:0x000005C7::1:0:0x22F111:0:0x62F11132313339303133323031
+sendRequestStored:readID:0x00000647:0x000005C7::1:0:0x22F121:0:0x62F12132313339303234363032
+sendRequestStored:readID:0x00000647:0x000005C7::1:0:0x22F150:0:0x62F1500E2400
+sendRequestStored:readID:0x00000647:0x000005C7::1:0:0x22F151:0:0x62F1510F1000
+sendRequestStored:readID:0x00000647:0x000005C7::1:0:0x22F153:0:0x62F1530E1900
+sendRequestStored:readID:0x00000647:0x000005C7::1:0:0x22F154:0:0x62F1540027
+sendRequestStored:readID:0x00000647:0x000005C7::1:0:0x22F155:0:0x62F1550027
+sendRequestStored:readID:0x00000647:0x000005C7::1:0:0x22F18C:0:0x62F18C15042800100006990000
+sendRequestStored:readID:0x00000650:0x000005D0::1:0:0x22F100:0:0x62F10000140101
+sendRequestStored:readID:0x00000650:0x000005D0::1:0:0x22F111:0:0x62F11132313339303135343034
+sendRequestStored:readID:0x00000650:0x000005D0::1:0:0x22F121:0:0x62F12132313339303239343034
+sendRequestStored:readID:0x00000650:0x000005D0::1:0:0x22F150:0:0x62F1500F1200
+sendRequestStored:readID:0x00000650:0x000005D0::1:0:0x22F151:0:0x62F1510F221A
+sendRequestStored:readID:0x00000650:0x000005D0::1:0:0x22F153:0:0x62F1530E2700
+sendRequestStored:readID:0x00000650:0x000005D0::1:0:0x22F154:0:0x62F1540082
+sendRequestStored:readID:0x00000650:0x000005D0::1:0:0x22F155:0:0x62F1550082
+sendRequestStored:readID:0x00000650:0x000005D0::1:0:0x22F18C:0:0x62F18C21390072088216020804DC08
+sendRequestStored:readID:0x00000651:0x000005D1::1:0:0x22F100:0:0x62F10000020B01
+sendRequestStored:readID:0x00000651:0x000005D1::1:0:0x22F111:0:0x62F11132313339303137393030
+sendRequestStored:readID:0x00000651:0x000005D1::1:0:0x22F121:0:0x62F12132313339303239383033
+sendRequestStored:readID:0x00000651:0x000005D1::1:0:0x22F150:0:0x62F1500E3100
+sendRequestStored:readID:0x00000651:0x000005D1::1:0:0x22F151:0:0x62F1510F2301
+sendRequestStored:readID:0x00000651:0x000005D1::1:0:0x22F153:0:0x62F1530E3100
+sendRequestStored:readID:0x00000651:0x000005D1::1:0:0x22F154:0:0x62F1540082
+sendRequestStored:readID:0x00000651:0x000005D1::1:0:0x22F155:0:0x62F1550082
+sendRequestStored:readID:0x00000651:0x000005D1::1:0:0x22F18C:0:0x62F18C353044463131463037303031373235333031313630323131
+sendRequestStored:readID:0x00000652:0x000005D2::1:0:0x22F100:0:0x62F10000100201
+sendRequestStored:readID:0x00000652:0x000005D2::1:0:0x22F111:0:0x62F11130303039303132313032
+sendRequestStored:readID:0x00000652:0x000005D2::1:0:0x22F121:0:0x62F12130303039303237303332
+sendRequestStored:readID:0x00000652:0x000005D2::1:0:0x22F150:0:0x62F1500F1100
+sendRequestStored:readID:0x00000652:0x000005D2::1:0:0x22F151:0:0x62F1510F2000
+sendRequestStored:readID:0x00000652:0x000005D2::1:0:0x22F153:0:0x62F1530E3000
+sendRequestStored:readID:0x00000652:0x000005D2::1:0:0x22F154:0:0x62F154006B
+sendRequestStored:readID:0x00000652:0x000005D2::1:0:0x22F155:0:0x62F155006B
+sendRequestStored:readID:0x00000652:0x000005D2::1:0:0x22F18C:0:0x62F18C303030393030373230393035323730383135303033313031373839
+sendRequestStored:readID:0x00000656:0x000005D6::1:0:0x22F100:0:0x62F10000140101
+sendRequestStored:readID:0x00000656:0x000005D6::1:0:0x22F111:0:0x62F11132313339303135353034
+sendRequestStored:readID:0x00000656:0x000005D6::1:0:0x22F121:0:0x62F12132313339303239343034
+sendRequestStored:readID:0x00000656:0x000005D6::1:0:0x22F150:0:0x62F1500F1200
+sendRequestStored:readID:0x00000656:0x000005D6::1:0:0x22F151:0:0x62F1510F221A
+sendRequestStored:readID:0x00000656:0x000005D6::1:0:0x22F153:0:0x62F1530E2700
+sendRequestStored:readID:0x00000656:0x000005D6::1:0:0x22F154:0:0x62F1540082
+sendRequestStored:readID:0x00000656:0x000005D6::1:0:0x22F155:0:0x62F1550082
+sendRequestStored:readID:0x00000656:0x000005D6::1:0:0x22F18C:0:0x62F18C2139007308821602030537BB
+sendRequestStored:readID:0x00000657:0x000005D7::1:0:0x22F100:0:0x62F10000020B01
+sendRequestStored:readID:0x00000657:0x000005D7::1:0:0x22F111:0:0x62F11132313339303137393030
+sendRequestStored:readID:0x00000657:0x000005D7::1:0:0x22F121:0:0x62F12132313339303239383033
+sendRequestStored:readID:0x00000657:0x000005D7::1:0:0x22F150:0:0x62F1500E3100
+sendRequestStored:readID:0x00000657:0x000005D7::1:0:0x22F151:0:0x62F1510F2301
+sendRequestStored:readID:0x00000657:0x000005D7::1:0:0x22F153:0:0x62F1530E3100
+sendRequestStored:readID:0x00000657:0x000005D7::1:0:0x22F154:0:0x62F1540082
+sendRequestStored:readID:0x00000657:0x000005D7::1:0:0x22F155:0:0x62F1550082
+sendRequestStored:readID:0x00000657:0x000005D7::1:0:0x22F18C:0:0x62F18C353044463131463037303031343332393031313630323032
+sendRequestStored:readID:0x00000711:0x00000701::1:0:0x22F100:0:0x62F10000001601
+sendRequestStored:readID:0x00000711:0x00000701::1:0:0x22F111:0:0x62F11132313339303137373030
+sendRequestStored:readID:0x00000711:0x00000701::1:0:0x22F121:0:0x62F121323133393034343030303231333930323235303632313339303338333030
+sendRequestStored:readID:0x00000711:0x00000701::1:0:0x22F150:0:0x62F1500F0C01
+sendRequestStored:readID:0x00000711:0x00000701::1:0:0x22F151:0:0x62F151100701100702100701
+sendRequestStored:readID:0x00000711:0x00000701::1:0:0x22F153:0:0x62F153100701
+sendRequestStored:readID:0x00000711:0x00000701::1:0:0x22F154:0:0x62F1540082
+sendRequestStored:readID:0x00000711:0x00000701::1:0:0x22F155:0:0x62F155008200820082
+sendRequestStored:readID:0x00000711:0x00000701::1:0:0x22F18C:0:0x62F18C4C524B3730384630313938383030
+sendRequestStored:readID:0x00000740:0x00000720::1:0:0x22F100:0:0x62F10000810F01
+sendRequestStored:readID:0x00000740:0x00000720::1:0:0x22F111:0:0x62F11132313339303139383032
+sendRequestStored:readID:0x00000740:0x00000720::1:0:0x22F121:0:0x62F12132313339303234373033
+sendRequestStored:readID:0x00000740:0x00000720::1:0:0x22F150:0:0x62F1500E2600
+sendRequestStored:readID:0x00000740:0x00000720::1:0:0x22F151:0:0x62F1510F2400
+sendRequestStored:readID:0x00000740:0x00000720::1:0:0x22F153:0:0x62F1530F0E01
+sendRequestStored:readID:0x00000740:0x00000720::1:0:0x22F154:0:0x62F1540077
+sendRequestStored:readID:0x00000740:0x00000720::1:0:0x22F155:0:0x62F1550077
+sendRequestStored:readID:0x00000740:0x00000720::1:0:0x22F18C:0:0x62F18C32313339303036363035373731353039303230303335
+sendRequestStored:readID:0x00000741:0x00000721::1:0:0x22F100:0:0x62F10000012101
+sendRequestStored:readID:0x00000741:0x00000721::1:0:0x22F111:0:0x62F11132313339303136323030
+sendRequestStored:readID:0x00000741:0x00000721::1:0:0x22F121:0:0x62F12130303039303237353332
+sendRequestStored:readID:0x00000741:0x00000721::1:0:0x22F150:0:0x62F1500F0500
+sendRequestStored:readID:0x00000741:0x00000721::1:0:0x22F151:0:0x62F1510F2601
+sendRequestStored:readID:0x00000741:0x00000721::1:0:0x22F153:0:0x62F1530F0801
+sendRequestStored:readID:0x00000741:0x00000721::1:0:0x22F154:0:0x62F1540046
+sendRequestStored:readID:0x00000741:0x00000721::1:0:0x22F155:0:0x62F1550046
+sendRequestStored:readID:0x00000741:0x00000721::1:0:0x22F18C:0:0x62F18C4132433733393831373133303030303231363330393031303139
+sendRequestStored:readID:0x00000742:0x00000722::1:0:0x22F100:0:0x62F10000040501
+sendRequestStored:readID:0x00000742:0x00000722::1:0:0x22F111:0:0x62F11130393939303132303030
+sendRequestStored:readID:0x00000742:0x00000722::1:0:0x22F121:0:0x62F12132313339303231383038
+sendRequestStored:readID:0x00000742:0x00000722::1:0:0x22F150:0:0x62F1500E3301
+sendRequestStored:readID:0x00000742:0x00000722::1:0:0x22F151:0:0x62F151101B00
+sendRequestStored:readID:0x00000742:0x00000722::1:0:0x22F153:0:0x62F1530F0B00
+sendRequestStored:readID:0x00000742:0x00000722::1:0:0x22F154:0:0x62F1540077
+sendRequestStored:readID:0x00000742:0x00000722::1:0:0x22F155:0:0x62F1550077
+sendRequestStored:readID:0x00000742:0x00000722::1:0:0x22F18C:0:0x62F18C363332393133383030433135323433556E30443030343031303030373741454652
+sendRequestStored:readID:0x00000743:0x00000723::1:0:0x22F100:0:0x62F10000662901
+sendRequestStored:readID:0x00000743:0x00000723::1:0:0x22F111:0:0x62F11132313339303138333035
+sendRequestStored:readID:0x00000743:0x00000723::1:0:0x22F121:0:0x62F12132313339303230333039
+sendRequestStored:readID:0x00000743:0x00000723::1:0:0x22F150:0:0x62F1500F2B00
+sendRequestStored:readID:0x00000743:0x00000723::1:0:0x22F151:0:0x62F151100F00
+sendRequestStored:readID:0x00000743:0x00000723::1:0:0x22F153:0:0x62F1530F2B00
+sendRequestStored:readID:0x00000743:0x00000723::1:0:0x22F154:0:0x62F1540048
+sendRequestStored:readID:0x00000743:0x00000723::1:0:0x22F155:0:0x62F1550048
+sendRequestStored:readID:0x00000743:0x00000723::1:0:0x22F18C:0:0x62F18C3030303330383033343831363031353030333936
+sendRequestStored:readID:0x00000744:0x00000724::1:0:0x22F100:0:0x62F10000510301
+sendRequestStored:readID:0x00000744:0x00000724::1:0:0x22F111:0:0x62F11132313339303135393033
+sendRequestStored:readID:0x00000744:0x00000724::1:0:0x22F121:0:0x62F12132313339303239373034
+sendRequestStored:readID:0x00000744:0x00000724::1:0:0x22F150:0:0x62F1500F0700
+sendRequestStored:readID:0x00000744:0x00000724::1:0:0x22F151:0:0x62F1510F3300
+sendRequestStored:readID:0x00000744:0x00000724::1:0:0x22F153:0:0x62F1530F1300
+sendRequestStored:readID:0x00000744:0x00000724::1:0:0x22F154:0:0x62F1540021
+sendRequestStored:readID:0x00000744:0x00000724::1:0:0x22F155:0:0x62F1550021
+sendRequestStored:readID:0x00000744:0x00000724::1:0:0x22F18C:0:0x62F18C313533323233333030323934
+sendRequestStored:readID:0x00000745:0x00000725::1:0:0x22F100:0:0x62F10000240201
+sendRequestStored:readID:0x00000745:0x00000725::1:0:0x22F111:0:0x62F11132313339303134333033
+sendRequestStored:readID:0x00000745:0x00000725::1:0:0x22F121:0:0x62F12132313339303238373034
+sendRequestStored:readID:0x00000745:0x00000725::1:0:0x22F150:0:0x62F1500E3300
+sendRequestStored:readID:0x00000745:0x00000725::1:0:0x22F151:0:0x62F1510F2D02
+sendRequestStored:readID:0x00000745:0x00000725::1:0:0x22F153:0:0x62F1530E2302
+sendRequestStored:readID:0x00000745:0x00000725::1:0:0x22F154:0:0x62F1540048
+sendRequestStored:readID:0x00000745:0x00000725::1:0:0x22F155:0:0x62F15500B8
+sendRequestStored:readID:0x00000745:0x00000725::1:0:0x22F18C:0:0x62F18C00000000000152230076
+sendRequestStored:readID:0x00000746:0x00000726::1:0:0x22F100:0:0x62F10002260501
+sendRequestStored:readID:0x00000746:0x00000726::1:0:0x22F111:0:0x62F11132313339303137373031
+sendRequestStored:readID:0x00000746:0x00000726::1:0:0x22F121:0:0x62F12132313339303233383031
+sendRequestStored:readID:0x00000746:0x00000726::1:0:0x22F150:0:0x62F1500E2700
+sendRequestStored:readID:0x00000746:0x00000726::1:0:0x22F151:0:0x62F1510F0900
+sendRequestStored:readID:0x00000746:0x00000726::1:0:0x22F153:0:0x62F1530E3100
+sendRequestStored:readID:0x00000746:0x00000726::1:0:0x22F154:0:0x62F1540007
+sendRequestStored:readID:0x00000746:0x00000726::1:0:0x22F155:0:0x62F1550007
+sendRequestStored:readID:0x00000746:0x00000726::1:0:0x22F18C:0:0x62F18C38353030303132373739
+sendRequestStored:readID:0x00000748:0x00000728::1:0:0x22F100:0:0x62F100005E0101
+sendRequestStored:readID:0x00000748:0x00000728::1:0:0x22F111:0:0x62F11132313339303136303033
+sendRequestStored:readID:0x00000748:0x00000728::1:0:0x22F121:0:0x62F12132313339303236343033
+sendRequestStored:readID:0x00000748:0x00000728::1:0:0x22F150:0:0x62F1500F0700
+sendRequestStored:readID:0x00000748:0x00000728::1:0:0x22F151:0:0x62F1510F2500
+sendRequestStored:readID:0x00000748:0x00000728::1:0:0x22F153:0:0x62F1530F1300
+sendRequestStored:readID:0x00000748:0x00000728::1:0:0x22F154:0:0x62F1540021
+sendRequestStored:readID:0x00000748:0x00000728::1:0:0x22F155:0:0x62F1550021
+sendRequestStored:readID:0x00000748:0x00000728::1:0:0x22F18C:0:0x62F18C313531383833333032353238
+sendRequestStored:readID:0x00000766:0x00000767::1:0:0x22F100:0:0x62F10000821001
+sendRequestStored:readID:0x00000766:0x00000767::1:0:0x22F111:0:0x62F11130303039303134303032
+sendRequestStored:readID:0x00000766:0x00000767::1:0:0x22F121:0:0x62F12130303039303231363334
+sendRequestStored:readID:0x00000766:0x00000767::1:0:0x22F150:0:0x62F1500F0600
+sendRequestStored:readID:0x00000766:0x00000767::1:0:0x22F151:0:0x62F151100504
+sendRequestStored:readID:0x00000766:0x00000767::1:0:0x22F153:0:0x62F1530E280E
+sendRequestStored:readID:0x00000766:0x00000767::1:0:0x22F154:0:0x62F1540077
+sendRequestStored:readID:0x00000766:0x00000767::1:0:0x22F155:0:0x62F1550077
+sendRequestStored:readID:0x00000766:0x00000767::1:0:0x22F18C:0:0x62F18C4336333133303236303047313533343435323734
+sendRequestStored:readID:0x0000076C:0x0000076D::1:0:0x22F100:0:0x62F10000821001
+sendRequestStored:readID:0x0000076C:0x0000076D::1:0:0x22F111:0:0x62F11130303039303134303032
+sendRequestStored:readID:0x0000076C:0x0000076D::1:0:0x22F121:0:0x62F12130303039303231363334
+sendRequestStored:readID:0x0000076C:0x0000076D::1:0:0x22F150:0:0x62F1500F0600
+sendRequestStored:readID:0x0000076C:0x0000076D::1:0:0x22F151:0:0x62F151100504
+sendRequestStored:readID:0x0000076C:0x0000076D::1:0:0x22F153:0:0x62F1530E280E
+sendRequestStored:readID:0x0000076C:0x0000076D::1:0:0x22F154:0:0x62F1540077
+sendRequestStored:readID:0x0000076C:0x0000076D::1:0:0x22F155:0:0x62F1550077
+sendRequestStored:readID:0x0000076C:0x0000076D::1:0:0x22F18C:0:0x62F18C4336333133303236303047313533343435323835
+sendRequestStored:readID:0x0000076E:0x0000076F::1:0:0x22F100:0:0x62F10000821001
+sendRequestStored:readID:0x0000076E:0x0000076F::1:0:0x22F111:0:0x62F11130303039303133393032
+sendRequestStored:readID:0x0000076E:0x0000076F::1:0:0x22F121:0:0x62F12130303039303231343334
+sendRequestStored:readID:0x0000076E:0x0000076F::1:0:0x22F150:0:0x62F1500F0600
+sendRequestStored:readID:0x0000076E:0x0000076F::1:0:0x22F151:0:0x62F151100504
+sendRequestStored:readID:0x0000076E:0x0000076F::1:0:0x22F153:0:0x62F1530E280E
+sendRequestStored:readID:0x0000076E:0x0000076F::1:0:0x22F154:0:0x62F1540077
+sendRequestStored:readID:0x0000076E:0x0000076F::1:0:0x22F155:0:0x62F1550077
+sendRequestStored:readID:0x0000076E:0x0000076F::1:0:0x22F18C:0:0x62F18C4336333033303431303047313533343435303932
+sendRequestStored:readID:0x00000772:0x00000773::1:0:0x22F100:0:0x62F10000821001
+sendRequestStored:readID:0x00000772:0x00000773::1:0:0x22F111:0:0x62F11130303039303133393032
+sendRequestStored:readID:0x00000772:0x00000773::1:0:0x22F121:0:0x62F12130303039303231343334
+sendRequestStored:readID:0x00000772:0x00000773::1:0:0x22F150:0:0x62F1500F0600
+sendRequestStored:readID:0x00000772:0x00000773::1:0:0x22F151:0:0x62F151100504
+sendRequestStored:readID:0x00000772:0x00000773::1:0:0x22F153:0:0x62F1530E280E
+sendRequestStored:readID:0x00000772:0x00000773::1:0:0x22F154:0:0x62F1540077
+sendRequestStored:readID:0x00000772:0x00000773::1:0:0x22F155:0:0x62F1550077
+sendRequestStored:readID:0x00000772:0x00000773::1:0:0x22F18C:0:0x62F18C4336333033303431303047313533343435313134
+sendRequestStored:readID:0x000007E0:0x000007E8::1:0:0x22F100:0:0x62F10000900E01
+sendRequestStored:readID:0x000007E0:0x000007E8::1:0:0x22F111:0:0x62F11136353439303131343030
+sendRequestStored:readID:0x000007E0:0x000007E8::1:0:0x22F121:0:0x62F121363534393034313130303635343930323131303036353439303335363030
+sendRequestStored:readID:0x000007E0:0x000007E8::1:0:0x22F150:0:0x62F1500F1200
+sendRequestStored:readID:0x000007E0:0x000007E8::1:0:0x22F151:0:0x62F1510F15010F31000F3300
+sendRequestStored:readID:0x000007E0:0x000007E8::1:0:0x22F153:0:0x62F1530F1501
+sendRequestStored:readID:0x000007E0:0x000007E8::1:0:0x22F154:0:0x62F1540003
+sendRequestStored:readID:0x000007E0:0x000007E8::1:0:0x22F155:0:0x62F155000300030003
+sendRequestStored:readID:0x000007E0:0x000007E8::1:0:0x22F18C:0:0x62F18C100002081499101013012301
+sendRequestStored:readID:0x000007E1:0x000007E9::1:0:0x22F100:0:0x62F10000090501
+sendRequestStored:readID:0x000007E1:0x000007E9::1:0:0x22F111:0:0x62F11130303039303135303030
+sendRequestStored:readID:0x000007E1:0x000007E9::1:0:0x22F121:0:0x62F121303030303030303030303030303930323032333330303030303030303030
+sendRequestStored:readID:0x000007E1:0x000007E9::1:0:0x22F150:0:0x62F1500E3000
+sendRequestStored:readID:0x000007E1:0x000007E9::1:0:0x22F151:0:0x62F1510E31000F2E000F2E00
+sendRequestStored:readID:0x000007E1:0x000007E9::1:0:0x22F153:0:0x62F1530E3100
+sendRequestStored:readID:0x000007E1:0x000007E9::1:0:0x22F154:0:0x62F1540003
+sendRequestStored:readID:0x000007E1:0x000007E9::1:0:0x22F155:0:0x62F155000300040004
+sendRequestStored:readID:0x000007E1:0x000007E9::1:0:0x22F18C:0:0x62F18C31353139353030303437
+sendRequestStored:readID:0x000007E2:0x000007EA::1:0:0x22F100:0:0x62F100000B3301
+sendRequestStored:readID:0x000007E2:0x000007EA::1:0:0x22F111:0:0x62F11132313339303135303033
+sendRequestStored:readID:0x000007E2:0x000007EA::1:0:0x22F121:0:0x62F12132313339303234353036
+sendRequestStored:readID:0x000007E2:0x000007EA::1:0:0x22F150:0:0x62F1500F1700
+sendRequestStored:readID:0x000007E2:0x000007EA::1:0:0x22F151:0:0x62F1510F3100
+sendRequestStored:readID:0x000007E2:0x000007EA::1:0:0x22F153:0:0x62F1530F2001
+sendRequestStored:readID:0x000007E2:0x000007EA::1:0:0x22F154:0:0x62F1540027
+sendRequestStored:readID:0x000007E2:0x000007EA::1:0:0x22F155:0:0x62F1550027
+sendRequestStored:readID:0x000007E2:0x000007EA::1:0:0x22F18C:0:0x62F18C323133393031353030330027000F08070023065B4130303150373435
+sendRequestStored:readID:0x000007E3:0x000007EB::1:0:0x22F100:0:0x62F10000330B01
+sendRequestStored:readID:0x000007E3:0x000007EB::1:0:0x22F111:0:0x62F11130303039303137323032
+sendRequestStored:readID:0x000007E3:0x000007EB::1:0:0x22F121:0:0x62F1213030303930323536333330303039303331383038
+sendRequestStored:readID:0x000007E3:0x000007EB::1:0:0x22F150:0:0x62F1500D2B00
+sendRequestStored:readID:0x000007E3:0x000007EB::1:0:0x22F151:0:0x62F1510F2F000F2F00
+sendRequestStored:readID:0x000007E3:0x000007EB::1:0:0x22F153:0:0x62F1530B1400
+sendRequestStored:readID:0x000007E3:0x000007EB::1:0:0x22F154:0:0x62F154009E
+sendRequestStored:readID:0x000007E3:0x000007EB::1:0:0x22F155:0:0x62F155009E009E
+sendRequestStored:readID:0x000007E3:0x000007EB::1:0:0x22F18C:0:0x62F18C31353032333732323634
+sendRequestStored:readID:0x000007E4:0x000007EC::1:0:0x22F100:0:0x62F100001A1701
+sendRequestStored:readID:0x000007E4:0x000007EC::1:0:0x22F111:0:0x62F11130303039303131373033
+sendRequestStored:readID:0x000007E4:0x000007EC::1:0:0x22F121:0:0x62F121303030393034343630303030303930323434333530303039303338373039
+sendRequestStored:readID:0x000007E4:0x000007EC::1:0:0x22F150:0:0x62F1500F0800
+sendRequestStored:readID:0x000007E4:0x000007EC::1:0:0x22F151:0:0x62F1510F1600100600100A00
+sendRequestStored:readID:0x000007E4:0x000007EC::1:0:0x22F153:0:0x62F1530F1600
+sendRequestStored:readID:0x000007E4:0x000007EC::1:0:0x22F154:0:0x62F154009E
+sendRequestStored:readID:0x000007E4:0x000007EC::1:0:0x22F155:0:0x62F155009E009E009E
+sendRequestStored:readID:0x000007E4:0x000007EC::1:0:0x22F18C:0:0x62F18C31353036313630303032373135383031
+sendRequestStored:readID:0x000007E5:0x000007ED::1:0:0x22F100:0:0x62F100023E0601
+sendRequestStored:readID:0x000007E5:0x000007ED::1:0:0x22F111:0:0x62F11130303039303136323032
+sendRequestStored:readID:0x000007E5:0x000007ED::1:0:0x22F121:0:0x62F121303030393034323030303030303930323330333430303039303336353038
+sendRequestStored:readID:0x000007E5:0x000007ED::1:0:0x22F150:0:0x62F1500E2F00
+sendRequestStored:readID:0x000007E5:0x000007ED::1:0:0x22F151:0:0x62F1510F1100100D00100D00
+sendRequestStored:readID:0x000007E5:0x000007ED::1:0:0x22F153:0:0x62F1530F1100
+sendRequestStored:readID:0x000007E5:0x000007ED::1:0:0x22F154:0:0x62F154009E
+sendRequestStored:readID:0x000007E5:0x000007ED::1:0:0x22F155:0:0x62F155009E009E009E
+sendRequestStored:readID:0x000007E5:0x000007ED::1:0:0x22F18C:0:0x62F18C31353038323630303237303135383031
+writeLogLine:Data:5:Start Execution of data collection
+getEcuListEntryByAddress:BATTERY:0x000007E0::100:0x000007E0:0x000007E8:::1:2
+sendRequest:BATTERY:0x000007E0:0x000007E8::1:0:0x221005:0:0x62100501
+getEcuListEntryByAddress:BATTERY:0x000007E0::100:0x000007E0:0x000007E8:::1:2
+sendRequest:BATTERY:0x000007E0:0x000007E8::1:0:0x226505:0:0x626505000B58CB
+getEcuListEntryByAddress:BATTERY:0x000007E0::100:0x000007E0:0x000007E8:::1:2
+sendRequest:BATTERY:0x000007E0:0x000007E8::1:0:0x22C156:0:0x62C156000B58CB00089A13
+getEcuListEntryByAddress:BATTERY_2:0x00000609::9:0x00000609:0x00000589:::1:2
+sendRequest:BATTERY_2:0x00000609:0x00000589::1:0:0x221833:0:0x62183300000000
+getEcuListEntryByAddress:BATTERY_2:0x00000609::9:0x00000609:0x00000589:::1:2
+sendRequest:BATTERY_2:0x00000609:0x00000589::1:0:0x221841:0:0x62184173094C0A8D3514047B027E108D2A4B0B7E6840330100761643013B0570031903660D4514722C0D02431942088B174F014E049E2679FE79344004750C42088DC877F29A68541118021F045E1070405B364C164415481444134B0D44126212581A5D135B1B500E4610581F561F541B420C50100C02471235045217481655246031462250110B013C0447155B384C0F470E5C1B4F13651F490E2F07461750174A0B410D4D0710024F165A210500440B0300430D5314531A07004612511721015514501557F04EE2531181102C1281102C0A81102C0981102BE481102BE481102BD081102BBD81102BBB91002BBA90F02BB581102BB581102BB581002BB181002BB181002BB181002BAE81002BAE80F02BAA80F02BAA80F02BA780A02BA781002BA680F02BA681202B7981202B7781102B7581102B3C81002B2981002B1781002B1780F02B1480F02B1381102AE680F02AD780F02AAC80F02AAB80F02AAB80F02AAB80F02AAB81202AA881102AA781102AA681102AA681102AA581102AA581002AA481102AA481102AA381002AA181002AA081002A9F81002A9E81002A9E81102A9D81102A9C81102A9A81002A9A81002A9981002A9981102A9981102A9981002A9881102A9881002A9681002A9581002A9481002A9381002A9381002A9381002A9381102A9281102A9181002A9181002A9081002A8F81102A8E81102A8D81102A8D81002A8D81002A8C81002A8B81002A8B81002A8A81002A8A81002A8A81002A8981002A8981002A8881002A8881002A8881002A8781002A8581002A8581102A8581102A8481002A8481002A8381002A8281302A8181302A80006003DE006003DE00600BDE066003DE02602BDE006007DE026033DE026047DE0260479D006000800C6003DE046053DE066053DD026003DE046053DE066003DE02603BDE006003D7006007DE086003DE006003C0006003DE006003DE006003DE02601FDE006007DE00601BDE006003DE006003DE02602FDE006003DE006003DE006013DE006013DE006003DE066003DE046003DE006003DE026037DE02602BDE02603BDE026003DE006003DE026007DE046053DE026017DE026053DE00601BDE02603FDE006013DE006017DE026007DE006013DE00600FDE02601FDE02601FDE02601FDE086003DE006003DE026003DE006023DE006007DE006013DE026053DE006007DE02602BDE086003DE066057DE006003DE006003DE02602BDE026007DE026013DE006017DE006027DE02602BDE026003DE02600BDE006013DE02603FDE00600BDE02601BDE086003DE006003DE00601FDE0A6003DE026027DE0A6003DE006003DE006013DE006003DE086003DE006003DE00600FDE08605FDE02602BDE00600FDE026043DE02601BDE026027D90D170D170C170C170D180D170C950C960A1609980D150C9A0D170D180D180D160D190D170C190C970C9A0D192C980D980D970D1A0D9A2C950D182D180D180E980F962D190C980D170D190D160B9B0B960C970C190C950C980C9A0C9A0C980C980C980C980C970C970C9A0C980C960C970C980D170C980D150C980C990C180B990B180C960D150C990C980B980C970C9B0C980C990C980C970C950C180C970C960C980D170D160C9A0C960C970C950D150C970C980C970D170C970C980D150C9A0C960D9B0E980F99000000000000000000070000000400000012000000050000006600000007000000050000000400006F53000000000000005700000007000000010000003D0000000000000121000000020000000300001BC800000549000000C1000002FC0000000F0000002F0000008B000000320000000B00000003000000C9000000300000031C000000000000003400000003000000070000000200000000000015BD0000005A00000006000000540000000400000097000000040000006E000003EB0000007D000000A70000047500000003000000710000050C0000009100000007000000990000000300000002000000770000000000000007000003CD0000008600000006000000900000000500000000000000020000008400000EF50000000600000062000000A100000081000003EB00000002000000020000006F000000B000000004000000760000000500000000000003E4000000720000000B000000020000000200000097000000810000000700000000000003F90000005F00000000000000A90000007B000003EC0000007E00000020000001C00000002000000170000001A00000006000000000000005D0000001D0000001D000000000000001D00000000000000000000000000000000000000170000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000200000000000000000000000000000002000000000000000000000000000000070000019C0000000000000001000000190000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000322000000000000001D00000002000000000000001C0000001800000000000000000000000100000014000000000000001B00000001000000000000000000000019000000000000000000000000000000000000001D000000030000000000000000000000000000000000000000000000300000000000000000000000620000001D0000000300000000000000000000014B2000007C00000000000000000000003D00000000000000010000000000000000000002E0F0000000F00001C0CF0000E4DE0000A0DD400140EE40002027400000F0000000F0000000F03C000007400000F03C000048000080A74003A0C800002027400300F000024020000160E00000E0D802000007400000074000001F4000000800006057400000580000002F40000047400040F0020080C70000000F4000006740000008000268F6800000474003A0E00203A0D80001E0D8000000F0000000000000C0A0020080EBC0008088000240D8000060300000A0E40000604800000000000020300000402800000000000121E3400040380000000000006030000080ECC0002030000000F0000281ED00004030000000F0000060E5400000000000A040000100CA800060A8280100D8000000F00000A1CF0000803800000000000080EAC000A040000060200000403000000000000000F00001C0F00000C06800004020000260D8000060480000A0C8000380F00000000000004028000260B80A0000F0000241EE00004028000040300000E0E2800000F00000000000006050000000F000004028000060400200000000008038000011513CE011513C2011513B40115138A0115137201151359011512D4011512A30115129A0115127B011463B6011463B60114634B011463410114633B011462F0011462EF011461B1011461AC0114619E011439F9011432550114318501142C2D01142C1901142BE201142B1401142ACC01142AAA01142AA5011429C20114298B011424100114240001142390011423880114238001142379011423720113FC360113FBD10113FBC70113FB680113FB600113FABA0113FAB20113FA390113F4060113F3760113F2C00113EBF40113EBED0113EB700113E4090113E3660113E35A0113E2B20113E2AB0113E2A80113E2260113E2250113E2180113DC080113DB700113DB630113DAC70113DABA0113DAB90113DAB60113DA260113C3EA0113C3E00113C3730113C2C30113C2310113BBFA0113BBF50113BBF20113BB780113BAB60113BAAF0113BA2E0113BA250113BA250113B3F80113B3770113B36B0113B3660113B3640113B2C20113B22F0113B2230113B2230113ABE30113AB770113AB760113AAC00113AA340113A4020113A374FF00FEFEF7FDFDF9FDFDE400FCFFFFFFFFFAFFFFF9FCFDFCFFFDFCFEF8FFFEFDF9FFFEFEFDFF00F7F4FDF8FEFBFEFBFBFCFBFAFFFBFAFBFBFBFEFFFC00FDFBFBFEEDFE00FFFAF4FDFCFCFBFBFFFFF9FBFEFAFF00FBFDFDFFFFFCFBFC00FCFB00FBFAFBFC
+writeLogLine:BATTERY_2:5:calculation-assignment%3A previous ignition_count [99]
+writeLogLine:BATTERY_2:5:calculation-assignment%3A Current ignition_count [0]
+writeLogLine:BATTERY_2:5:Stop Execution of data collection
+writeLogLine:action14:5:calculation-assignment%3A result  &lt;-  0/2 [2]
+releaseDiagnosticChannel:action21:0
+writeLogLine:return:5:[5] Battery Data returned%3A 2
+Finished execution of /cust/remotediag/script5/Script.lua</rdsc:longRawData>
+        </ns3:log>
+      </vdr:diagnosticResult>
+    </vdr:tcu>
+  </vdr:diagnosis>
+  <vdr:maintenance>
+    <vdr:maintenance1Ar vdr:status="0" vdr:timestamp="1493730868">
+      <vdr:value>TtYBmUyzDEI=</vdr:value>
+    </vdr:maintenance1Ar>
+    <vdr:maintenance2Ar vdr:status="0" vdr:timestamp="1493724342">
+      <vdr:value>AAAAHHAAAAA=</vdr:value>
+    </vdr:maintenance2Ar>
+  </vdr:maintenance>
+  <vdr:information>
+    <vdr:dataPoint vdr:name="languageHU" vdr:status="0" vdr:timestamp="2017-04-28T09:05:23">
+      <vdr:integerValue>0</vdr:integerValue>
+    </vdr:dataPoint>
+    <vdr:ignitionstate vdr:status="0" vdr:timestamp="1493730909">
+      <vdr:value>4</vdr:value>
+    </vdr:ignitionstate>
+    <vdr:positionheading>
+      <vdr:value>0</vdr:value>
+    </vdr:positionheading>
+    <vdr:tirewarninglamp vdr:status="0" vdr:timestamp="1493370323">
+      <vdr:value>0</vdr:value>
+    </vdr:tirewarninglamp>
+    <vdr:tirepressscope vdr:status="0" vdr:timestamp="1493370323">
+      <vdr:value>2</vdr:value>
+    </vdr:tirepressscope>
+    <vdr:tirewarningsRDK vdr:status="0" vdr:timestamp="1493370323">
+      <vdr:value>0</vdr:value>
+    </vdr:tirewarningsRDK>
+    <vdr:tirepressFR vdr:status="0" vdr:timestamp="1493730874">
+      <vdr:value>2.4</vdr:value>
+    </vdr:tirepressFR>
+    <vdr:tirepressFL vdr:status="0" vdr:timestamp="1493730874">
+      <vdr:value>2.425</vdr:value>
+    </vdr:tirepressFL>
+    <vdr:tirepressRR vdr:status="0" vdr:timestamp="1493730874">
+      <vdr:value>2.4</vdr:value>
+    </vdr:tirepressRR>
+    <vdr:tirepressRL vdr:status="0" vdr:timestamp="1493730874">
+      <vdr:value>2.175</vdr:value>
+    </vdr:tirepressRL>
+    <vdr:tiremarker vdr:status="0" vdr:timestamp="1493727822">
+      <vdr:value>0</vdr:value>
+    </vdr:tiremarker>
+    <vdr:supplybatteryvoltage>
+      <vdr:value>13.0</vdr:value>
+    </vdr:supplybatteryvoltage>
+    <vdr:tanklevelpercent vdr:status="0" vdr:timestamp="1493730548">
+      <vdr:value>92.0</vdr:value>
+    </vdr:tanklevelpercent>
+    <vdr:warningbrakeliningwear vdr:hilId="0x200029" vdr:status="0" vdr:timestamp="1493370323">
+      <vdr:value>0</vdr:value>
+    </vdr:warningbrakeliningwear>
+    <vdr:warningbrakefluid vdr:hilId="0x20002D" vdr:status="0" vdr:timestamp="1493370323">
+      <vdr:value>0</vdr:value>
+    </vdr:warningbrakefluid>
+    <vdr:warningcoolantlevellow vdr:hilId="0x200067" vdr:status="0" vdr:timestamp="1493370323">
+      <vdr:value>0</vdr:value>
+    </vdr:warningcoolantlevellow>
+    <vdr:warningwashwater vdr:hilId="0x200100" vdr:status="0" vdr:timestamp="1493370323">
+      <vdr:value>0</vdr:value>
+    </vdr:warningwashwater>
+    <vdr:warningenginelight vdr:hilId="0xF00017" vdr:status="0" vdr:timestamp="1493370322">
+      <vdr:value>0</vdr:value>
+    </vdr:warningenginelight>
+    <vdr:warninglowbattery vdr:hilId="0x2004C1" vdr:status="0" vdr:timestamp="1493370323">
+      <vdr:value>0</vdr:value>
+    </vdr:warninglowbattery>
+  </vdr:information>
+</vdr:vehicleData>
+
+  </v:payload>  
+</v:vdpRequest>

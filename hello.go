@@ -3,9 +3,46 @@ package main
 import (
 	"fmt"
 	"math"
+	"io/ioutil"
+	"os"
+	"encoding/xml"
+
 )
 
 // Types ###########################################
+type Action struct {
+	XMLName xml.Name `xml: "v:action"`
+	Type string `xml: "v:name,attr"`
+	SubAction Subaction `xml: "v:subAction"`
+
+}
+
+type Subaction struct {
+	XMLName xml.Name `xml: "v:subAction"`
+	Type string `xml: "v:name,attr"`
+
+}
+
+type VehicleID struct {
+	XMLName xml.Name `xml: "vdr:vehicleData"`
+	Type string `xml: "vdr:vin, attr"`
+}
+
+type VehicleData struct {
+	XMLName xml.Name `xml: ""`
+	Acion string `xml: "v:action"`
+	Subaction string `xml: "v:subAction"`
+	VehicleID string
+	PartNumber string
+
+}
+
+type Vehicle struct {
+	XMLName xml.Name
+	Acion string
+	VehicleID string
+	PartNumber string
+}
 
 type Person struct {
 	Name string
@@ -86,9 +123,28 @@ func (ip IPAddr) String() string {
 
 
 func main() {
-	do(21)
-	do("Hello")
-	do(true)
+
+	xmlFile, err := os.Open("Hermes_ESR_Battery_VdpRequest.xml")
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Printf("Successfully opened xml file")
+
+	defer xmlFile.Close()
+
+	byteValue, _ := ioutil.ReadAll(xmlFile)
+
+	var infos Action
+
+	xml.Unmarshal(byteValue, &infos)
+
+	fmt.Println(infos.Type)
+
+
+
+
 
 	// Stringers #################################### 
 	hosts := map[string]IPAddr{
