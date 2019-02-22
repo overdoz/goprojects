@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <person>Thanh</person>
+  <adresses>
+    <city>Munich</city>
+    <street>HBF</street>
+  </adresses>
+</users>
+<users>
+  <person>Maggus</person>
+  <adresses>
+    <city>Berlin</city>
+    <street>Janno</street>
+  </adresses>
+</users>

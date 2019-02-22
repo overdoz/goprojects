@@ -10,38 +10,89 @@ import (
 )
 
 // Types ###########################################
-type Action struct {
-	XMLName xml.Name `xml: "v:action"`
-	Type string `xml: "v:name,attr"`
-	SubAction Subaction `xml: "v:subAction"`
-
+//type Action struct {
+//	XMLName xml.Name `xml: "action"`
+//	SubAction string `xml: "subAction"`
+//
+//}
+//
+//type Subaction struct {
+//	XMLName xml.Name `xml: "subAction"`
+//
+//
+//}
+//
+//type VehicleID struct {
+//	XMLName xml.Name `xml: "vehicleData"`
+//	Type string `xml: "vin, attr"`
+//}
+type Users struct {
+	Users xml.Name `xml:"users"`
+	Userlist []User `xml:"person"`
 }
 
-type Subaction struct {
-	XMLName xml.Name `xml: "v:subAction"`
-	Type string `xml: "v:name,attr"`
-
+type User struct {
+	Name string `xml:"person"`
+	Adresses Adress `xml:"adresses"`
 }
 
-type VehicleID struct {
-	XMLName xml.Name `xml: "vdr:vehicleData"`
-	Type string `xml: "vdr:vin, attr"`
+
+type Adress struct {
+	City string `xml:"city"`
+	Street string `xml:"street"`
 }
 
-type VehicleData struct {
-	XMLName xml.Name `xml: ""`
-	Acion string `xml: "v:action"`
-	Subaction string `xml: "v:subAction"`
-	VehicleID string
-	PartNumber string
-
+func Sum(end int) int {
+	sum := 0
+	for i := 0; i < end; i++ {
+		if i % 3 == 0 || i % 5 == 0 {
+			sum += i
+		}
+	}
+	return sum
 }
 
-type Vehicle struct {
-	XMLName xml.Name
-	Acion string
-	VehicleID string
-	PartNumber string
+
+func main() {
+
+	// xmlFile, err := os.Open("C:/Users/TL05566/go/src/goprojects/Hermes_ESR_Battery_VdpRequest.xml")
+	xmlFile, err := os.Open("Users.xml")
+
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	fmt.Println("Successfully opened xml file")
+
+	defer xmlFile.Close()
+
+	byteValue, _ := ioutil.ReadAll(xmlFile)
+
+	var user Users
+
+	xml.Unmarshal(byteValue, &user)
+
+	for i := 0; i < len(user.Userlist); i++ {
+		fmt.Println(user.Userlist[i])
+		// fmt.Println(user.Adresses.City)
+	}
+
+
+
+
+
+
+
+
+
+	// Stringers ####################################
+	//hosts := map[string]IPAddr{
+	//	"loopback":  {127, 0, 0, 1},
+	//	"googleDNS": {8, 8, 8, 8},
+	//}
+	//for name, ip := range hosts {
+	//	fmt.Printf("%v: %v\n", name, ip)
+	//}
 }
 
 type Person struct {
@@ -122,36 +173,4 @@ func (ip IPAddr) String() string {
 
 
 
-func main() {
 
-	xmlFile, err := os.Open("Hermes_ESR_Battery_VdpRequest.xml")
-
-	if err != nil {
-		fmt.Println(err)
-	}
-
-	fmt.Printf("Successfully opened xml file")
-
-	defer xmlFile.Close()
-
-	byteValue, _ := ioutil.ReadAll(xmlFile)
-
-	var infos Action
-
-	xml.Unmarshal(byteValue, &infos)
-
-	fmt.Println(infos.Type)
-
-
-
-
-
-	// Stringers #################################### 
-	hosts := map[string]IPAddr{
-		"loopback":  {127, 0, 0, 1},
-		"googleDNS": {8, 8, 8, 8},
-	}
-	for name, ip := range hosts {
-		fmt.Printf("%v: %v\n", name, ip)
-	}
-}
