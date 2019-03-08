@@ -6,35 +6,49 @@ import (
 	"io/ioutil"
 	"os"
 	"encoding/xml"
+	"strings"
 
 )
 
 // Types ###########################################
-//type Action struct {
-//	XMLName xml.Name `xml: "action"`
-//	SubAction string `xml: "subAction"`
-//
-//}
-//
-//type Subaction struct {
-//	XMLName xml.Name `xml: "subAction"`
-//
-//
-//}
-//
-//type VehicleID struct {
-//	XMLName xml.Name `xml: "vehicleData"`
-//	Type string `xml: "vin, attr"`
-//}
-type Users struct {
-	Users xml.Name `xml:"users"`
-	Userlist []User `xml:"person"`
+type VDPrequest struct {
+	Head Header `xml:"header"`
+	InnerPayload Payload `xml:"payload"`
 }
 
-type User struct {
-	Name string `xml:"person"`
-	Adresses Adress `xml:"adresses"`
+type Action struct {
+	InnerSub Subaction `xml:"subAction"`
+	Name string `xml:"name,attr"`
 }
+
+type Header struct {
+	InnerAction Action `xml:"action"`
+}
+
+type Subaction struct {
+	Name string `xml:"name,attr"`
+}
+
+type Payload struct {
+	Data VehicleData `xml:"vehicleData"`
+}
+
+type VehicleData struct {
+	VehicleID string `xml:"vin,attr"`
+}
+
+
+
+type Users struct {
+	//Users xml.Name `xml:"user"`
+	//Userlist []User `xml:"user"`
+	InnerXML string `xml:",innerxml"`
+}
+
+//type User struct {
+//	Name string `xml:"person"`
+//	Adresses Adress `xml:"adresses"`
+//}
 
 
 type Adress struct {
@@ -53,10 +67,12 @@ func Sum(end int) int {
 }
 
 
+
+
 func main() {
 
-	// xmlFile, err := os.Open("C:/Users/TL05566/go/src/goprojects/Hermes_ESR_Battery_VdpRequest.xml")
-	xmlFile, err := os.Open("Users.xml")
+	xmlFile, err := os.Open("C:/Users/TL05566/go/src/goprojects/Hermes_ESR_Battery_VdpRequest.xml")
+	// xmlFile, err := os.Open("Users.xml")
 
 	if err != nil {
 		fmt.Println(err)
@@ -68,14 +84,41 @@ func main() {
 
 	byteValue, _ := ioutil.ReadAll(xmlFile)
 
-	var user Users
+	// var user Users
+	var request VDPrequest
 
-	xml.Unmarshal(byteValue, &user)
+	xml.Unmarshal(byteValue, &request)
+	fmt.Println(request.Head.InnerAction.InnerSub.Name)
+	fmt.Println(request.Head.InnerAction.Name)
+	fmt.Println(request.InnerPayload.Data.VehicleID)
 
-	for i := 0; i < len(user.Userlist); i++ {
-		fmt.Println(user.Userlist[i])
-		// fmt.Println(user.Adresses.City)
+
+	var input float64
+	slice1 := []float64{}
+
+
+
+	for len(slice1) < 10 {
+		fmt.Print("Enter a number: ")
+		fmt.Scanf("%f", &input)
+		slice1 = append(slice1, input)
 	}
+	fmt.Println(slice1)
+
+	v:= make(map[string]int)
+	text := "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+	textArray := strings.Fields(text)
+
+	for _, word := range textArray {
+		v[word]++
+	}
+
+	for key, val := range v {
+		fmt.Printf("key[%s] value: %v \n", key, val)
+	}
+
+	// fmt.Println()
+
 
 
 
@@ -167,7 +210,7 @@ func (ip IPAddr) String() string {
 }
 
 
-// Errors #######################################
+
 
 
 

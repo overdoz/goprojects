@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<users>
+<root>
+<user>
   <person>Thanh</person>
   <adresses>
     <city>Munich</city>
-    <street>HBF</street>
+    <street>St.-Cajetan</street>
   </adresses>
-</users>
-<users>
-  <person>Maggus</person>
+</user>
+<user>
+  <person>Markus</person>
   <adresses>
     <city>Berlin</city>
-    <street>Janno</street>
+    <street>Jannowitz</street>
   </adresses>
-</users>
+</user>
+</root>
