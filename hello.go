@@ -4,15 +4,11 @@ import (
 	"fmt"
 	// "github.com/user/exercise"
 	"math"
-<<<<<<< HEAD
 	"io/ioutil"
 	"os"
 	"encoding/xml"
 	"strings"
-
-=======
 	"time"
->>>>>>> 0a6b85e57aadba33f15d366ad5e996d688e497f4
 )
 
 // Types ###########################################
@@ -71,10 +67,34 @@ func Sum(end int) int {
 	return sum
 }
 
+// Problem 5
+
+func SmallestNumber() int {
+	for i := 0; !IsDivideble(i); i++ {
+		if IsDivideble(i) {
+			return i
+		}
+	}
+}
+
+func IsDivideble (num int) bool {
+	yes := true
+	for i := 1; i < 20; i++ {
+		if num % i == 0 {
+			yes = yes && true
+		} else {
+			yes = false
+		}
+	}
+	return yes
+}
+
 
 
 
 func main() {
+	fmt.Println(SmallestNumber())
+
 
 	xmlFile, err := os.Open("C:/Users/TL05566/go/src/goprojects/Hermes_ESR_Battery_VdpRequest.xml")
 	// xmlFile, err := os.Open("Users.xml")
@@ -121,6 +141,17 @@ func main() {
 	for key, val := range v {
 		fmt.Printf("key[%s] value: %v \n", key, val)
 	}
+
+	max := 0
+	maxKey := ""
+	for key, val := range v {
+		if val > max {
+			max = val
+			maxKey = key
+		}
+	}
+
+	fmt.Printf("Key: %v, Value: %v", maxKey, max)
 
 	// fmt.Println()
 
@@ -185,7 +216,6 @@ func (v *Vertex) Scale(f float64) {
 
 // Interface ######################################
 
-// Was machen Interfaces genau?
 
 func (f MyFloat) Abs() float64 {
 	if f < 0 {
@@ -239,11 +269,6 @@ func (ip IPAddr) String() string {
 	return fmt.Sprintf("%v.%v.%v.%v", ip[0], ip[1], ip[2], ip[3])
 }
 
-<<<<<<< HEAD
-
-=======
-// Errors #######################################
->>>>>>> 0a6b85e57aadba33f15d366ad5e996d688e497f4
 
 func (e ErrNegativeSqrt) Error() string {
 	return fmt.Sprintf("can not Sqrt negative number: %v", float64(e))
@@ -287,35 +312,32 @@ func say(s string) {
 
 // ########################### MAIN METHODE #####################################################
 
-<<<<<<< HEAD
 
+//func main() {
+//
+//	// Goroutines
+//
+//	go say("hello")
+//	say("world")
+//
+//	// Interface
+//	r := rect{width: 10, height: 23}
+//	measure(r)
+//
+//	do(21)
+//	do("Hello")
+//	do(true)
+//
+//	fmt.Println(Sqrt(2))
+//	fmt.Println(Sqrt(-2))
+//
+//	// Stringers
+//	hosts := map[string]IPAddr{
+//		"loopback":  {127, 0, 0, 1},
+//		"googleDNS": {8, 8, 8, 8},
+//	}
+//	for name, ip := range hosts {
+//		fmt.Printf("%v: %v\n", name, ip)
+//	}
+//}
 
-=======
-func main() {
-
-	// Goroutines
-
-	go say("hello")
-	say("world")
-
-	// Interface
-	r := rect{width: 10, height: 23}
-	measure(r)
-
-	do(21)
-	do("Hello")
-	do(true)
-
-	fmt.Println(Sqrt(2))
-	fmt.Println(Sqrt(-2))
-
-	// Stringers
-	hosts := map[string]IPAddr{
-		"loopback":  {127, 0, 0, 1},
-		"googleDNS": {8, 8, 8, 8},
-	}
-	for name, ip := range hosts {
-		fmt.Printf("%v: %v\n", name, ip)
-	}
-}
->>>>>>> 0a6b85e57aadba33f15d366ad5e996d688e497f4
