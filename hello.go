@@ -70,11 +70,13 @@ func Sum(end int) int {
 // Problem 5
 
 func SmallestNumber() int {
+	a := 0
 	for i := 0; !IsDivideble(i); i++ {
 		if IsDivideble(i) {
-			return i
+			a = i
 		}
 	}
+	return a
 }
 
 func IsDivideble (num int) bool {
@@ -89,11 +91,16 @@ func IsDivideble (num int) bool {
 	return yes
 }
 
+func IsEven(num int) (int, bool) {
+	return num / 2, num % 2 == 0
+}
+
 
 
 
 func main() {
-	fmt.Println(SmallestNumber())
+	zahl, ok := IsEven(5)
+	fmt.Println(zahl, ok)
 
 
 	xmlFile, err := os.Open("C:/Users/TL05566/go/src/goprojects/Hermes_ESR_Battery_VdpRequest.xml")
