@@ -95,7 +95,14 @@ func IsEven(num int) (int, bool) {
 	return num / 2, num % 2 == 0
 }
 
+type Point struct {
+	x, y int
+}
 
+type Circle struct {
+	Location Point
+	Radius float64
+}
 
 
 func main() {
