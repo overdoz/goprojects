@@ -9,9 +9,11 @@ type secretAgent struct {
 	AllowedToKill bool
 }
 
+
 func (s *secretAgent) disallow() {
 	s.AllowedToKill = false
 }
+
 
 func main() {
 	x := 7
