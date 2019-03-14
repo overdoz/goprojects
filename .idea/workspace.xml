@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f57c018b-4a13-4ad0-b230-e4c5bfc5832d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02_parsing/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/02_parsing/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03_passing_data_into_templates/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,14 +26,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/02_parsing/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+            <state relative-caret-position="135">
+              <caret line="9" column="13" lean-forward="true" selection-end-line="34" selection-end-column="1" />
               <folding>
                 <element signature="e#14#30#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/03_passing_data_into_templates/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
@@ -67,6 +75,7 @@
         <option value="$PROJECT_DIR$/01_template/main.go" />
         <option value="$PROJECT_DIR$/02_parsing/Test.html" />
         <option value="$PROJECT_DIR$/02_parsing/main.go" />
+        <option value="$PROJECT_DIR$/03_passing_data_into_templates/main.go" />
       </list>
     </option>
   </component>
@@ -92,7 +101,7 @@
             <path>
               <item name="goprojects" type="b2602c69:ProjectViewProjectNode" />
               <item name="goprojects" type="462c0819:PsiDirectoryNode" />
-              <item name="02_parsing" type="462c0819:PsiDirectoryNode" />
+              <item name="03_passing_data_into_templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -179,11 +188,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/02_parsing/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="true" selection-end-line="34" selection-end-column="1" />
           <folding>
             <element signature="e#14#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03_passing_data_into_templates/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
