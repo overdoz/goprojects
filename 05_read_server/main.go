@@ -1,8 +1,8 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"io"
 	"log"
 	"net"
 )
@@ -19,10 +19,18 @@ func main() {
 		if err != nil {
 			log.Println(err)
 		}
+		go handle(conn)
 
-		io.WriteString(conn, "\nHello from Thanh\n")
-		fmt.Fprintln(conn, "My first server")
-
-		conn.Close()
 	}
+}
+
+func handle(conn net.Conn) {
+	scanner := bufio.NewScanner(conn)
+	for scanner.Scan() {
+		ln := scanner.Text()
+		fmt.Println(ln)
+	}
+	defer conn.Close()
+
+	fmt.Println("Code got here.")
 }
