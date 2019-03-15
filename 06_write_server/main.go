@@ -27,8 +27,10 @@ func main() {
 func handle(conn net.Conn) {
 	scanner := bufio.NewScanner(conn)
 	for scanner.Scan() {
+		// scanne jedes Zeichen
 		ln := scanner.Text()
-		fmt.Println(ln)
+		fmt.Println(ln + "wo bin ich?")
+		fmt.Fprintf(conn, "I heard you say: %s\n", ln)
 	}
 	defer conn.Close()
 
