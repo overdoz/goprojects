@@ -43,7 +43,9 @@ func request(conn net.Conn) {
 		if i == 0 {
 			//request line (GET http/1.1)
 			m := strings.Fields(ln)[0]
+			u := strings.Fields(ln)[1]
 			fmt.Println("***METHOD", m)
+			fmt.Println("***URI", u)
 		}
 		if ln == "" {
 			// headers are done
