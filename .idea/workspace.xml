@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f57c018b-4a13-4ad0-b230-e4c5bfc5832d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/10_http_multiplexer/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_http/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/09_http/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,13 +85,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/09_http/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+            <state relative-caret-position="315">
+              <caret line="30" column="17" lean-forward="true" selection-end-line="65" />
               <folding>
                 <element signature="e#14#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/10_http_multiplexer/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="744">
+              <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+              <folding>
+                <element signature="e#14#94#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,15 +114,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="8" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Go/src/net/net.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -150,6 +153,7 @@
         <option value="$PROJECT_DIR$/05_read_server/main.go" />
         <option value="$PROJECT_DIR$/08_rot13/main.go" />
         <option value="$PROJECT_DIR$/09_http/main.go" />
+        <option value="$PROJECT_DIR$/10_http_multiplexer/main.go" />
       </list>
     </option>
   </component>
@@ -171,6 +175,11 @@
             <path>
               <item name="goprojects" type="b2602c69:ProjectViewProjectNode" />
               <item name="goprojects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="goprojects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goprojects" type="462c0819:PsiDirectoryNode" />
+              <item name="10_http_multiplexer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,10 +372,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/09_http/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="45" column="38" lean-forward="true" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+        <state relative-caret-position="315">
+          <caret line="30" column="17" lean-forward="true" selection-end-line="65" />
           <folding>
             <element signature="e#14#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10_http_multiplexer/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+          <folding>
+            <element signature="e#14#94#0" expanded="true" />
           </folding>
         </state>
       </provider>
