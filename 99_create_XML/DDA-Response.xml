@@ -1,0 +1,2983 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns1:vdpResponse ns1:schemaVersion="2.0.5" xsi:schemaLocation="http://diagnostics.xsd.corpintra.net/vdp VDP-Access-2.0.5.xsd" xmlns:ns1="http://diagnostics.xsd.corpintra.net/vdp" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ns1:header>
+		<ns1:action ns1:name="DDA">
+			<ns1:subAction ns1:name="RAR"/>
+		</ns1:action>
+
+		<ns1:eeSnapshot>
+			<ns1:eesUid>WDDVP9AB1EJ001221;2014-10-24T12:29:49.650+0200</ns1:eesUid>
+			<ns1:eesVersion>2.2.0</ns1:eesVersion>
+		</ns1:eeSnapshot>
+
+		<ns1:trackingId>WDDVP9AB1EJ001221_Tassi2</ns1:trackingId>
+		<ns1:sourceId/>
+	</ns1:header>
+
+	<ns1:responseState ns1:state="0">
+		<ns1:messageItem>
+			<ns1:messageSource>DDA</ns1:messageSource>
+		</ns1:messageItem>
+	</ns1:responseState>
+
+	<ns1:requestHeader>
+		<ns1:action ns1:name="DDA">
+			<ns1:subAction ns1:name="RAR"/>
+		</ns1:action>
+
+		<ns1:eeSnapshot>
+			<ns1:eesUid>WDDVP9AB1EJ001221</ns1:eesUid>
+			<ns1:eesVersion>2.2.0</ns1:eesVersion>
+		</ns1:eeSnapshot>
+
+		<ns1:trackingId>WDDVP9AB1EJ001221_Tassi2</ns1:trackingId>
+		<ns1:sourceId/>
+		<ns1:market/>
+		<ns1:tenant/>
+		<ns1:user/>
+
+		<ns1:language>
+			<ns1:primary/>
+			<ns1:secondary/>
+			<ns1:tertiary/>
+		</ns1:language>
+
+	</ns1:requestHeader>
+	
+	<ns1:payload>
+		<ees:eeSnapshot ees:dataModelVersion="2.2.0" ees:snapshotLanguage="XD" ees:uid="WDDVP9AB1EJ001221;2014-10-24T12:29:49.650+0200" xsi:schemaLocation="http://diagnostics.xsd.corpintra.net/ees EeSnapshot_v2.2.0.xsd" xmlns:ees="http://diagnostics.xsd.corpintra.net/ees">
+			<ees:vehicleIdentData ees:chassisNumber="WDDVP9AB1EJ001221"/>
+			<ees:collectingSystem ees:codeVersion="172901940200000" ees:dataVersion="000902971600100" ees:date="2014-10-24" ees:jobId="WDDVP9AB1EJ001221_Tassi2" ees:name="PASS" ees:tdTrigger="Monitoring" ees:time="03:00:07+02:00" xsi:type="ees:CollectingSystemTdType">
+				<ees:useCase>
+					<ees:useCaseHint>STR</ees:useCaseHint>
+				</ees:useCase>
+				<ees:transportingSystem ees:dataVersion="A1000005C94E8B" ees:date="2014-10-24" ees:jobId="WDDVP9AB1EJ001221_Tassi2" ees:name="TD_USA" ees:time="03:00:07+02:00" xsi:type="ees:TransportingSystemOtaType"/>
+			</ees:collectingSystem>
+			<ees:transformingSystem ees:codeVersion="Diag2EES: 6.1.8" ees:dataVersion="Diag2EES: 3.2.14" ees:date="2014-10-24" ees:jobId="100349" ees:name="ISA" ees:processingStatus="GREEN" ees:time="12:29:48+02:00"/>
+			<ees:transformingSystem ees:codeVersion="LKA: 2.0.3" ees:date="2014-10-24" ees:jobId="100349" ees:name="ISA" ees:processingStatus="GREEN" ees:time="12:29:48+02:00"/>
+			<ees:transformingSystem ees:codeVersion="SBN: 2.0.4" ees:dataVersion="1.1.3" ees:date="2014-10-24" ees:jobId="100349" ees:name="SDA" ees:processingStatus="GREEN" ees:time="12:29:48+02:00">
+				<ees:messageList>
+					<ees:message>
+						<ees:messageCode>DDA4351</ees:messageCode>
+						<ees:messageText ees:type="LANGUAGE">
+							<ees:freeText ees:content="The following ecu's can not be resolved: [0x00000642 ]"/>
+						</ees:messageText>
+					</ees:message>
+				</ees:messageList>
+			</ees:transformingSystem>
+			<ees:transformingSystem ees:codeVersion="FKT: 2.0.9" ees:dataVersion="09/2014" ees:date="2014-10-24" ees:jobId="100349" ees:name="SDA" ees:processingStatus="GREEN" ees:time="12:29:49+02:00"/>
+			<ees:transformingSystem ees:codeVersion="15.3.3.0" ees:dataVersion="07/2014" ees:date="2014-10-24" ees:name="XD" ees:processingStatus="GREEN" ees:time="12:29:49+02:00">
+				<ees:messageList>
+					<ees:message>
+						<ees:messageCode>XDGen9999</ees:messageCode>
+						<ees:messageText ees:type="XD">
+							<ees:freeText ees:content="This transformingSystem was created by EES-Normalisation (SDA)"/>
+						</ees:messageText>
+					</ees:message>
+				</ees:messageList>
+			</ees:transformingSystem>
+			<ees:transformingSystem ees:codeVersion="2.0.5" ees:dataVersion="1.2.1" ees:date="2014-10-24" ees:jobId="100349" ees:name="SDA" ees:processingStatus="GREEN" ees:time="12:29:49+02:00"/>
+			<ees:transformingSystem ees:codeVersion="6.1.8" ees:dataVersion="3.2.14" ees:date="2014-10-24" ees:jobId="100349" ees:name="DDA" ees:processingStatus="GREEN" ees:time="12:29:49+02:00"/>
+			<ees:basicData>
+				<ees:odometerValue>
+					<ees:numericValue>
+						<ees:value>
+							<ees:doubleValue>2983.0</ees:doubleValue>
+						</ees:value>
+						<ees:Unit>
+							<ees:SiUnitPraefix>k</ees:SiUnitPraefix>
+							<ees:SiUnitAtom ees:unit="m"/>
+						</ees:Unit>
+					</ees:numericValue>
+				</ees:odometerValue>
+			</ees:basicData>
+			<ees:ecuList>
+				<ees:ecu ees:diogenesName="EIS166" ees:hwSerialNumber="1gys1@a#">
+					<ees:extendedEcuId ees:ecuSnapshotId="EIS166" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="ITR_4726"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="ITR_4726"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="39-31"/>
+						<ees:freeText ees:content="(N73)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="021002" ees:hwObjectNumber="246 905 14 02" ees:hwSupplier="Kostal" ees:hwSupplierCode="7" ees:hwVersion="12/01 00" ees:swVersion="13/06 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareType="CODE" ees:flashwareVersion="13/06 00" ees:swSupplier="Kostal" ees:swSupplierCode="7"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F10B"/>
+							<ees:freeText ees:content="ECU Configuration"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10B000018210180A0001025362E00CB0D001C40094700064000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10002100201</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343639303531343032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500C0100</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D0600</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540007</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550007</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C3167797331406123</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="PTGW1T" ees:hwSerialNumber="2429018800CCT14A0000015">
+					<ees:extendedEcuId ees:ecuSnapshotId="PTGW1T" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="28267-72"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="28267-72"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="28267-73"/>
+						<ees:freeText ees:content="(N93/8)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="00A00A" ees:hwObjectNumber="242 901 88 00" ees:hwSupplier="Unidentified" ees:hwSupplierCode="204" ees:hwVersion="14/01 00" ees:swVersion="14/08 03"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="02/02 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="242 902 91 00" ees:flashwareType="CODE" ees:flashwareVersion="14/08 03" ees:swSupplier="Unidentified" ees:swSupplierCode="204"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000A00A01</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343239303138383030</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12132343239303239313030</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500E0100</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510E0803</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F153020200</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F15400CC</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F15500CC</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C3234323930313838303043435431344130303030303135</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220326"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62032600000385</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220329"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x620329001D</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22030C"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62030C0141</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220314"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x6203146C</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220313"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x620313FF</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220305"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x6203053234323930313838303043435431344130303030313738</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220316"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x6203160270</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220311"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x6203110000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220303"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x6203030001</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220323"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x620323F4</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220305"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x6203053234323930313838303043435431344130303030313738</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220306"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x620306323432393031383830304343534E5F524541445F455252</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220308"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x6203083234323930313838303043435431344330303430303934</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C3234323930313838303043435431344130303030303135</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220309"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x6203093234323930313838303043435431334C30303034353336</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220307"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x6203073234323930313838303043435431344230303436363639</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22032A"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62032A00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="IC172" ees:hwSerialNumber="3155140051">
+					<ees:extendedEcuId ees:ecuSnapshotId="IC172" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="4430-1"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="4430-1"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="252-1"/>
+						<ees:freeText ees:content="(A1)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="002508" ees:hwObjectNumber="242 901 64 00" ees:hwSupplier="Bosch" ees:hwSupplierCode="3" ees:hwVersion="13/04 00" ees:swVersion="14/03 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="11/07 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="172 902 35 05" ees:flashwareType="CODE" ees:flashwareVersion="14/03 00" ees:swSupplier="Bosch" ees:swSupplierCode="3"/>
+					<ees:softwareIdBlock ees:countId="1" ees:flashwareObjectNumber="172 902 36 05" ees:flashwareType="CODE" ees:flashwareVersion="14/03 00" ees:swSupplier="Bosch" ees:swSupplierCode="3"/>
+					<ees:softwareIdBlock ees:countId="2" ees:flashwareObjectNumber="172 902 37 05" ees:flashwareType="CODE" ees:flashwareVersion="14/03 00" ees:swSupplier="Bosch" ees:swSupplierCode="3"/>
+					<ees:softwareIdBlock ees:countId="3" ees:flashwareObjectNumber="242 902 93 00" ees:flashwareType="CODE" ees:flashwareVersion="14/03 00" ees:swSupplier="Bosch" ees:swSupplierCode="3"/>
+					<ees:softwareIdBlock ees:countId="4" ees:flashwareObjectNumber="172 902 39 05" ees:flashwareType="CODE" ees:flashwareVersion="14/03 00" ees:swSupplier="Bosch" ees:swSupplierCode="3"/>
+					<ees:softwareIdBlock ees:countId="5" ees:flashwareObjectNumber="172 902 40 05" ees:flashwareType="CODE" ees:flashwareVersion="14/03 00" ees:swSupplier="Bosch" ees:swSupplierCode="3"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000250801</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343239303136343030</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F121313732393032333530353137323930323336303531373239303233373035323432393032393330303137323930323339303531373239303234303035</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500D0400</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510E03000E03000E03000E03000E03000E0300</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530B0700</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540003</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F155000300030003000300030003</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C33313535313430303531</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="SCCM166" ees:hwSerialNumber="141081005">
+					<ees:extendedEcuId ees:ecuSnapshotId="SCCM166" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="10471-232"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="10471-232"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="ITR_3933"/>
+						<ees:freeText ees:content="(N80)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000507" ees:hwObjectNumber="246 540 33 45" ees:hwSupplier="Valeo" ees:hwSupplierCode="72" ees:hwVersion="11/07 00" ees:swVersion="12/48 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="10/36 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="246 902 71 01" ees:flashwareType="CODE" ees:flashwareVersion="12/48 00" ees:swSupplier="Valeo" ees:swSupplierCode="72"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000050701</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343635343033333435</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12132343639303237313031</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500B0700</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510C3000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530A2400</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540048</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550048</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C313431303831303035</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="RBS242" ees:hwSerialNumber="246901050110851403130010607916">
+					<ees:extendedEcuId ees:ecuSnapshotId="RBS242" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="ITR_3908"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="ITR_3908"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="10967-11"/>
+						<ees:freeText ees:content="(N30/4)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000A05" ees:hwObjectNumber="246 901 05 01" ees:hwSupplier="Bosch" ees:hwSupplierCode="3" ees:hwVersion="10/28 00" ees:swVersion="13/26 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="12/15 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="242 902 00 00" ees:flashwareType="CODE" ees:flashwareVersion="13/26 00" ees:swSupplier="Bosch" ees:swSupplierCode="3"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F100000A0501</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343639303130353031</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12132343239303230303030</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500A1C00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D1A00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530C0F00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540003</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550003</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C323436393031303530313130383531343033313330303130363037393136</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="ORC166" ees:hwSerialNumber="T6014032301989">
+					<ees:extendedEcuId ees:ecuSnapshotId="ORC166" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="5209-52"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="5209-52"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="9539-71"/>
+						<ees:freeText ees:content="(N2/10)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="00400A" ees:hwObjectNumber="242 901 37 00" ees:hwSupplier="Bosch" ees:hwSupplierCode="3" ees:hwVersion="12/36 00" ees:swVersion="13/40 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="13/08 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="242 902 69 00" ees:flashwareType="CODE" ees:flashwareVersion="13/40 00" ees:swSupplier="Bosch" ees:swSupplierCode="3"/>
+					<ees:softwareIdBlock ees:countId="1" ees:flashwareObjectNumber="242 903 20 00" ees:flashwareType="CODE" ees:flashwareVersion="13/50 00" ees:swSupplier="Bosch" ees:swSupplierCode="3"/>
+					<ees:softwareIdBlock ees:countId="2" ees:flashwareObjectNumber="FFF FFF FF FF" ees:flashwareType="CODE" ees:flashwareVersion="255/255 255" ees:swSupplier="Bosch" ees:swSupplierCode="3"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000400A01</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343239303133373030</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F121323432393032363930303234323930333230303046464646464646464646</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500C2400</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D28000D3200FFFFFF</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530D0800</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540003</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F155000300030003</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C5436303134303332333031393839</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="HU45" ees:hwSerialNumber="MEB200E328C219">
+					<ees:extendedEcuId ees:ecuSnapshotId="HU45" ees:ecuType="SINGLE"/>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="ITR_35368"/>
+						<ees:freeText ees:content="(A2)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="65/7" ees:hwObjectNumber="246 901 76 05" ees:hwSupplier="Mitsubishi Electric" ees:hwSupplierCode="133" ees:hwVersion="14/09" ees:swVersion="14/04 03"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="212 902 51 09" ees:flashwareType="CODE" ees:flashwareVersion="14/04 03" ees:swSupplier="Mitsubishi Electric" ees:swSupplierCode="133"/>
+					<ees:softwareIdBlock ees:countId="1" ees:flashwareObjectNumber="212 902 36 09" ees:flashwareType="DATA" ees:flashwareVersion="13/39 03" ees:swSupplier="Mitsubishi Electric" ees:swSupplierCode="133"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>KWP</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x21E1"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x61E14D45423230304533323843323139</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x2177"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x61772EB5A17296F05095C37E2C68BD1A1B61</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="FCW246" ees:hwSerialNumber="U629554903A141230211    ">
+					<ees:extendedEcuId ees:ecuSnapshotId="FCW246" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="11435-1"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="11435-1"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="39-232"/>
+						<ees:freeText ees:content="(A90)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000302" ees:hwObjectNumber="000 901 60 02" ees:hwSupplier="Autoliv" ees:hwSupplierCode="119" ees:hwVersion="13/06 02" ees:swVersion="13/33 01"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="13/06 01"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="000 902 71 20" ees:flashwareType="CODE" ees:flashwareVersion="13/33 01" ees:swSupplier="Autoliv" ees:swSupplierCode="119"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000030201</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11130303039303136303032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12130303039303237313230</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500D0602</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D2101</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530D0601</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540077</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550077</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C553632393535343930334131343132333032313120202020</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="IBSM3G_R1" ees:hwSerialNumber="S629554600A141471418    ">
+					<ees:extendedEcuId ees:ecuSnapshotId="IBSM3G_R1" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="9826-1"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="9826-1"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="9826-3"/>
+						<ees:freeText ees:content="(B29/5)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000103" ees:hwObjectNumber="000 901 88 02" ees:hwSupplier="Autoliv" ees:hwSupplierCode="119" ees:hwVersion="13/06 01" ees:swVersion="13/16 05"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="11/43 04"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="000 902 75 16" ees:flashwareType="CODE" ees:flashwareVersion="13/16 05" ees:swSupplier="Autoliv" ees:swSupplierCode="119"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000010301</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11130303039303138383032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12130303039303237353136</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500D0601</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D1005</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530B2B04</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540077</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550077</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C533632393535343630304131343134373134313820202020</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="IBSM3G_R4" ees:hwSerialNumber="S629554600A141470513    ">
+					<ees:extendedEcuId ees:ecuSnapshotId="IBSM3G_R4" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="9826-2"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="9826-2"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="9826-4"/>
+						<ees:freeText ees:content="(B29/4)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000103" ees:hwObjectNumber="000 901 88 02" ees:hwSupplier="Autoliv" ees:hwSupplierCode="119" ees:hwVersion="13/06 01" ees:swVersion="13/16 05"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="11/43 04"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="000 902 75 16" ees:flashwareType="CODE" ees:flashwareVersion="13/16 05" ees:swSupplier="Autoliv" ees:swSupplierCode="119"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000010301</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11130303039303138383032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12130303039303237353136</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500D0601</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D1005</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530B2B04</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540077</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550077</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C533632393535343630304131343134373035313320202020</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="SOUND_204" ees:hwSerialNumber="HBM004E1080591">
+					<ees:extendedEcuId ees:ecuSnapshotId="SOUND_204" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="11491-51"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="11491-51"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="36-137"/>
+						<ees:freeText ees:content="(N40/3)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="0/2" ees:hwObjectNumber="212 901 49 07" ees:hwSupplier="Harman / Becker" ees:hwSupplierCode="132" ees:hwVersion="13/28" ees:swVersion="13/28 04"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="212 902 27 09" ees:flashwareType="CODE" ees:flashwareVersion="13/28 04" ees:swSupplier="Harman / Becker" ees:swSupplierCode="132"/>
+					<ees:softwareIdBlock ees:countId="1" ees:flashwareObjectNumber="246 903 29 00" ees:flashwareType="DATA" ees:flashwareVersion="13/51 05" ees:swSupplier="Harman / Becker" ees:swSupplierCode="132"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>KWP</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x21E1"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x61E148424D3030344531303830353931</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="HVAC246" ees:hwSerialNumber="1604144512">
+					<ees:extendedEcuId ees:ecuSnapshotId="HVAC246" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="7169-1"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="7169-1"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="33-1"/>
+						<ees:freeText ees:content="(N22/7)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="007312" ees:hwObjectNumber="242 901 48 00" ees:hwSupplier="Hella" ees:hwSupplierCode="21" ees:hwVersion="12/36 01" ees:swVersion="13/45 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="11/22 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="242 902 92 00" ees:flashwareType="CODE" ees:flashwareVersion="13/45 00" ees:swSupplier="Hella" ees:swSupplierCode="21"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000731201</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343239303134383030</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12132343239303239323030</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500C2401</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D2D00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530B1600</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540015</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550015</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C31363034313434353132</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="SOGE451EV" ees:hwSerialNumber="140410Y5Ã‚Â¤Ã‚Â¤">
+					<ees:extendedEcuId ees:ecuSnapshotId="SOGE451EV" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="127132-221"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="127132-221"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="48869-2"/>
+						<ees:freeText ees:content="(H4/16)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000100" ees:hwObjectNumber="451 901 12 01" ees:hwSupplier="Delphi" ees:hwSupplierCode="64" ees:hwVersion="12/04 01" ees:swVersion="12/17 04"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="12/17 02"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="451 902 03 01" ees:flashwareType="CODE" ees:flashwareVersion="12/17 04" ees:swSupplier="Delphi" ees:swSupplierCode="64"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000010001</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11134353139303131323031</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12134353139303230333031</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500C0401</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510C1104</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530C1102</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540040</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550040</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C31343034313059359309</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="EPS246" ees:hwSerialNumber="bT@ y!Ã‚Â¤Ã‚Â¤Ã‚Â¤Ã‚Â¤">
+					<ees:extendedEcuId ees:ecuSnapshotId="EPS246" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="11495-292"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="11495-292"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="9721-1"/>
+						<ees:freeText ees:content="(N68)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000200" ees:hwObjectNumber="246 901 39 02" ees:hwSupplier="Koyo" ees:hwSupplierCode="97" ees:hwVersion="11/05 00" ees:swVersion="14/12 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="10/50 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="246 902 43 02" ees:flashwareType="CODE" ees:flashwareVersion="14/12 00" ees:swSupplier="Koyo" ees:swSupplierCode="97"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000020001</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343639303133393032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12132343639303234333032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500B0500</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510E0C00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530A3200</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540061</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550061</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C625440207921FFFFFFFF</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="SEATD166" ees:hwSerialNumber="A144140016A">
+					<ees:extendedEcuId ees:ecuSnapshotId="SEATD166" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="4440-1"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="4440-1"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="11070-31"/>
+						<ees:freeText ees:content="(N32/1)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000105" ees:hwObjectNumber="166 820 09 26" ees:hwSupplier="Conti Temic" ees:hwSupplierCode="60" ees:hwVersion="09/40 00" ees:swVersion="12/08 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="10/48 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="231 903 22 00" ees:flashwareType="CODE" ees:flashwareVersion="12/08 00" ees:swSupplier="Conti Temic" ees:swSupplierCode="60"/>
+					<ees:softwareIdBlock ees:countId="1" ees:flashwareObjectNumber="231 902 24 02" ees:flashwareType="CODE" ees:flashwareVersion="12/08 00" ees:swSupplier="Conti Temic" ees:swSupplierCode="60"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000010501</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11131363638323030393236</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1213233313930333232303032333139303232343032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F150092800</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510C08000C0800</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530A3000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F154003C</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F155003C003C</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C4131343431343030313641</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="SDAR221" ees:hwSerialNumber="DL0000E0720375">
+					<ees:extendedEcuId ees:ecuSnapshotId="SDAR221" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="98-111"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="98-111"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="ITR_3998"/>
+						<ees:freeText ees:content="(N87/5)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="5/0" ees:hwObjectNumber="212 870 57 89" ees:hwSupplier="Delphi" ees:hwSupplierCode="64" ees:hwVersion="12/19" ees:swVersion="12/26 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="212 902 79 03" ees:flashwareType="CODE" ees:flashwareVersion="12/26 00" ees:swSupplier="Delphi" ees:swSupplierCode="64"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>KWP</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x21E1"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x61E1444C303030304530373230333735</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x2177"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x617700000000000000000000000000000000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="SEATP166" ees:hwSerialNumber="A144070079E">
+					<ees:extendedEcuId ees:ecuSnapshotId="SEATP166" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="ITR_12408"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="ITR_12408"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="ITR_37079"/>
+						<ees:freeText ees:content="(N32/2)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000105" ees:hwObjectNumber="166 820 10 26" ees:hwSupplier="Conti Temic" ees:hwSupplierCode="60" ees:hwVersion="09/40 00" ees:swVersion="12/08 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="10/48 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="231 903 22 00" ees:flashwareType="CODE" ees:flashwareVersion="12/08 00" ees:swSupplier="Conti Temic" ees:swSupplierCode="60"/>
+					<ees:softwareIdBlock ees:countId="1" ees:flashwareObjectNumber="231 902 25 02" ees:flashwareType="CODE" ees:flashwareVersion="12/08 00" ees:swSupplier="Conti Temic" ees:swSupplierCode="60"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000010501</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11131363638323031303236</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1213233313930333232303032333139303232353032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F150092800</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510C08000C0800</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530A3000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F154003C</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F155003C003C</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C4131343430373030373945</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="UCI45" ees:hwSerialNumber="CO0000E1274265">
+					<ees:extendedEcuId ees:ecuSnapshotId="UCI45" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="12764-11"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="12764-11"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="557-101"/>
+						<ees:freeText ees:content="(N125/1)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="2/0" ees:hwObjectNumber="172 901 63 02" ees:hwSupplier="Continental" ees:hwSupplierCode="158" ees:hwVersion="12/29" ees:swVersion="13/22 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareObjectNumber="172 902 11 05" ees:flashwareType="BOOT" ees:flashwareVersion="13/22 00" ees:swSupplier="Continental" ees:swSupplierCode="158"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="172 902 10 05" ees:flashwareType="CODE" ees:flashwareVersion="13/22 00" ees:swSupplier="Continental" ees:swSupplierCode="158"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>KWP</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x21E1"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x61E1434F303030304531323734323635</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x2177"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x617700000000000000000000000000000000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="CBC" ees:hwSerialNumber="2841365611300A1440700569">
+					<ees:extendedEcuId ees:ecuSnapshotId="CBC" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="ITR_31566"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="ITR_31566"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="8881-1"/>
+						<ees:freeText ees:content="(N10)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="02C60A" ees:hwObjectNumber="117 901 23 00" ees:hwSupplier="Conti Temic" ees:hwSupplierCode="60" ees:hwVersion="11/30 05" ees:swVersion="13/36 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="13/36 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="246 902 20 02" ees:flashwareType="CODE" ees:flashwareVersion="13/36 00" ees:swSupplier="Conti Temic" ees:swSupplierCode="60"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10002C60A01</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11131313739303132333030</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12132343639303232303032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500B1E05</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D2400</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530D2400</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F154003C</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F155003C</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C323834313336353631313330304131343430373030353639</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220409"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x6204093E037E067C0513007B0580085802830B4A0174027C0B47047C0555014402820B10015C047C057E145708780783036202170180055F027B049615801349067A08180080147B067D0570037D047B047B0558027D177B0758055B0A81077A067107420258027A095F09720683086F0C720259037C0A7D076804811B660F760480067E047A0579095F06770724007E12770377047D0B79037C0484057B0A74027F0B80047C037B0380057E1088103C014A0189075F0685057F072F02720D7806720473047D146A06680B0120082C01000BA301000B9801000B8C01200B8C01200B8101200B7501200B7301200B6701200B6601100B6201100B5601100B5601100B4801200B4601200B4601200B3901200B3901200B3701200B2C01200B1F01300B1D01300B1401200B0A01200B0601200B0601100AFE01100AFB01100AF101000AC101000AAC01000AAC01000A9901000A9901200A8C01200A8101200A7501200A7201200A6801200A5C01200A5101100A5001200A4501200A3A01200A3801200A3501200A2901200A1D01200A1C01200A1B01200A1901200A0E01200A0C01100A09011009F4012009F0012009ED012009E9012009DD012009D2012009CE012009C3013009C0013009B7012009AB012009A0012009980110098B010009880100097F0100097F011009730110096C0100095F012009490120093D01300933012009270120091C0120091A01100909013008F5014008EA013008DE013008D3013008C7012008AD012008AD012008AC0130087F0130087D0140086001200854012008540130084F01300847013008430120083F012008330120082F006000000060000000600000066000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000660000000600000006000000060000000600000006000000060000000600000046000000060000000600000006000000060000000600000006000000060000004600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000026000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000000600000006000000060000002600000006000000060000000600000006000000060000000600000006000000C2A0DAF0DAC0E2B0E2B0CAA0E2B0D2A0E2B0E2B0CAA0CAC0E2A0E2A0E290D2A0E2B0E290E290CA90D2A0DAA0DA90EAA0EAA0EAA0EA90EAA0DA90DAE0DAA0EAA0EA90CAA0D290DAA0E2A0EAB0EAB0E2A0E2B0C2B0E2A0CAA0CA90CA90E290DAA0E2A0E290E2A0CAA0E2A0E2A0CAA0E290E290D2A0EA90EA90C2A0C2A0E290D2B0E2A0E2A0DAA0DAA0E2A0E2A0BAA0EAF0E2A0C2A0E290CAA0E2A0D2B0E2B0D2B0DA90E2A0D2A0E2A0CAB0CAC0E2A0E2C0E2A0DA90E2A0DAA0E290D2A0E2A0E2A0E290C2E0E2A0C29002E0000009B00000006000000E00000009C000000040000031A000000110000004B000000390000002200000001000000A10000005700000051000000010000038A000000060000001D0000001E000000B80000006C0000004B00000397000000180000000100000013000000260000003000000069000000030000006800000007000000010000107A0000004700000314000000400000000D000000270000000B00000024000000B200000009000000420000005C00000300000000220000001C0000003B0000002500000043000000640000003C000000010000006E0000001B00000004000003AC0000001F000000300000008C0000009700000018000003BA0000000F000000180000002A0000004300000005000000EA000003F5000000250000000B000006750000000E0000039000000002000000520000000C00000054000001070000000C00000349000000090000007B0000006F0000000000000021000000320000004C0000000D000002B10000000100000072000000220000001A00000004000000600000002500000000000000000013010000000000000000000000000000000000000300000000000000130000000000000000000000000000001200000000000000000000000000000003000000000000000000000000000000100000001500000012000000030000000000000000000000000000000000000000000000150DD00000004000150000000000000000000000000000000F000000030000000500000000000000000000000000000000000000100000000000000007000000160000000300000000003000000000000000000000000000080000001500000000020D0000000000150000000000000000000000030000000000108000000000140050000E00000000000000030000000000000000000000000000000A0000000000000000000000020000000000000000000000010600000000000003020000000000001500000000000000150000000000000000000000030000000000000014000000150C0E800000000000000000000000001300000000000000000000000000000015000000000000000000000000000000160000000000017400000274002A0CE000000074000000F4002E0B8000000A80000404F4200202F4000001740000017400380E00000001F400000174000000F400361D0020000980003A0B00000E04F4000202F40000027400000274000001F400000B80000001F400322E80000804740000017400000174200002F400000F00000004F48008067400380D8040000100000001F400000B7400000174000605F40004027400080674000001F40004037400040600000001740000030000000B00000E0274201007F000020174000201F400000174000002F4000402DC60120C8000000374000201F4001A0B6C2000090000020474000002F4000002E8000005F4200603F400000B0000040374000604740004038080000264000A1AD4000000F40000000000020174000E05F4000002000004057400000B0000321DD800000274000203F400000274000000000010050000000C00001008F0000002800000028000380F0000000174000203F400000274001609F000000C8000301D83600002F400020368000604F4000C0A8000000300000201F40000EA431600EABBD400EABBB300EABAAF00EABA0B00EAB9EE00EAB48900EAB46E00EAB40300EAB3C200EAB38F00EAB37600EAB2CB00EAB25700EAB1F900EAB1F500EAAC1700EAAC1000EAABE800EAABB200EAAAD700EAAA5E00EAA9FA00EAA40D00EAA3E900EAA3E800EAA3B700EAA38A00EAA34200EAA29E00EAA28300EAA20F00EAA1F200EAA1F000EA8A5900EA89F600EA849A00EA844C00EA842500EA83E700EA83C700EA839900EA82C500EA82A500EA825900EA81EE00EA7CA200EA7C6900EA7C4300EA7C0200EA7BD200EA7B7500EA7B0600EA7AB700EA7A9A00EA7A1A00EA79F100EA79E600EA73E800EA73AF00EA737200EA72C500EA721A00EA71F000EA6BE000EA6BB600EA6B8B00EA6B4B00EA6AF900EA6AE300EA69E900EA639F00EA636600EA634B00EA5A5700EA5A3300EA545500EA543200EA53C800EA53AB00EA533700EA520800EA51E300EA4C5000EA4C2A00EA4B9000EA4AF400EA4AF300EA4ACE00EA4A7200EA4A1B00EA49EC00EA44F400EA44F100EA446D00EA443500EA441100EA440000EA438200EA435000FDFF000000FE00FE000000FE000000FEFF0000FDFEFF000000000000FE00FC0000F1FFFE0000000000FC0000FDFF00FF000000FEFF00FD0000FD0000FDFB00FE0000FFFF00FFFB0000FB00FE00FE00FEFF000000FDFD0000FFFF000100FD000000FD00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220408"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x6204088E3528425045EBEAEBF0EFEFF1F7EFEFF1F8FAF0FAEFF1F7FAF5F4EDE2D7BDA2978B807583AB9F92867A6D7F93887A6A8A8073698C8073688D806E8B80738A7F746A8D80746A8B806F8A7B6C8A7F73698D8073688B806E8A7B6D7F8B81746A8D8073698B8073698D806E8A7A6C7B8A7E6A768A7F73688B8073698D806E8A796F8A7F7369897F73698A806E897A6A897F73698D7F6E887D6CEFF1F8FAFAEFF1EFF1F8FAEFF1EFF1F8FAF8F3ECF4F3F2F0EBE7DDD2B1968C8073BCA9978D7D72675947603FF4F2F0EBEADFD2B58D8075AEA29488798775684B405161857B6F62564C403985FC324A62847A6A5D4E4362513E4A5A465D43508FF4F3F2EFDDD2B69F8C8174AB99938370663E5D534456728D7B4BFC286FEFF1F8EFF1F8FAEFEFF1F8EFF1F8FAEFEFF1EFEFF1EFEFF1F8FAEEEFF1F7FAF9F3EFF1F5F3DCD2C6AE968B8075A79A94867A70EFEFEFF1FAEFF1F7FAF7F6F2EFEEF4F5F4F5F4E2D3B9AE968A7F758ACBC0A2968B7D718F7E6F6046392E3D24B08D3728465463403AEFF1F8EFF1F8FAEFFAF9F8F3F7FAEFF1F8EFF1F8FAF8F4F2FAEEF0F7EFF1F8EFF1EFF1F7FAF9F5EFF1F5DBC9B09A8D82788CA892877A6DEFF1F7EFF1F8EFEFF1F8F4EDF4F2E7D8C9BC8F8476685B4B404B5E95F5F3F2F0E1D6CBB2968C8075BCAEA397887D72AE9F958A7C71665C4E413D32468EFC3B2A1C001C001C08500150011071200120002000210A23FF2000200020BC23FF200020002000200022542009200020002000224620002001200720032002200220012003200530043000300D2002200320032005300430003012201D20032009302F200320053004302E200420053004302E20042009302F2003200A302F200320023007302E200420023007302E20042009303020032009302F200320053004302E200420053004302E200420093030200320093000302E200320022008302E200420053004302E200420053004302E200420093030200320083001302F200320093000302F200320053004302E200420043005302E20042009303020032009302F2003200530043030200220043005302F20032009303020032009302F200320053004302E20042009302F20042009316A20002000200021E2200120002079200020002000225D2000225D20002000200022542000200822172002200F2000200020122014200520022001200320053004300E20092001200220143006300F30013012500110021044200D20002002200020062005200220042005300430032003200320022009300220023002300130003000300310044007400240034001400A5007100E500151433FFF1C08500410054005400240044009500950015002401B5001501A500150061001100110003051200820072000202B20032002200220042005300430042002200320022003300C3010501B381638053803380038033801380138BB3FFF1C08306520002000225D200020002000231B23FF20002000225E20002000200020BD23FF2000231B23FF2000231B23FF2000200020002000225D200020002254200120002008200022472000200A2002200120022001200320012008300D20002003200420033006311D23FF23FF20002255200920002000200021BF20002000200020002000208A200120012000200520022001200120012003200330063000300920052002200220042006300330082002200220053008300B5002500150131C001C001C001C001C065001100210011000111020002000225E200020002000200020D02000200020002000200023EA20002000225E200020002075200020002000202C20012000200021BA20002000225D2000225F20002000225420002000200920002246200C2002200120012002200220083001300C200420032006300430CF20002000225D2000200020BE23FF20002255200020082232200F200D200420012000200420012003200E30013001300850015007100010740029000F0000001E000B000200020001000300051004101F00220004000100030002100F10060003000100050002000400021006100110061002100D5005300030AC3FFF1C001C05</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="DMFL166" ees:hwSerialNumber="Ã‚Â¤Ã‚Â¤)Ã‚Â¤">
+					<ees:extendedEcuId ees:ecuSnapshotId="DMFL166" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="1732-31"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="1732-31"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="391-4"/>
+						<ees:freeText ees:content="(N69/1)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000407" ees:hwObjectNumber="166 901 38 01" ees:hwSupplier="Temic" ees:hwSupplierCode="33" ees:hwVersion="11/21 00" ees:swVersion="13/15 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="09/32 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="166 902 82 05" ees:flashwareType="CODE" ees:flashwareVersion="13/15 00" ees:swSupplier="Temic" ees:swSupplierCode="33"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000040701</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11131363639303133383031</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12131363639303238323035</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500B1500</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D0F00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F153092000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540021</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550021</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C97872981</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="DMFR166" ees:hwSerialNumber="Ã‚Â¤Ã‚Â¤XÃ‚Â¤">
+					<ees:extendedEcuId ees:ecuSnapshotId="DMFR166" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="1732-32"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="1732-32"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="391-5"/>
+						<ees:freeText ees:content="(N69/2)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000407" ees:hwObjectNumber="166 901 40 01" ees:hwSupplier="Temic" ees:hwSupplierCode="33" ees:hwVersion="11/21 00" ees:swVersion="13/15 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="09/32 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="166 902 83 05" ees:flashwareType="CODE" ees:flashwareVersion="13/15 00" ees:swSupplier="Temic" ees:swSupplierCode="33"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000040701</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11131363639303134303031</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12131363639303238333035</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500B1500</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D0F00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F153092000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540021</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550021</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C98175892</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="EPKB166" ees:hwSerialNumber="Ã‚Â¤Ã‚Â¤Ã‚Â¤Ã‚Â¤Ã‚Â¤Ã‚Â¤2Ã‚Â¤Ã‚Â¤Ã‚Â¤ Ã‚Â¤">
+					<ees:extendedEcuId ees:ecuSnapshotId="EPKB166" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="11594-91"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="11594-91"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="7588-6"/>
+						<ees:freeText ees:content="(N128)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="00000C" ees:hwObjectNumber="246 545 05 32" ees:hwSupplier="TRW" ees:hwSupplierCode="39" ees:hwVersion="10/15 00" ees:swVersion="13/19 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="09/27 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="246 902 10 02" ees:flashwareType="CODE" ees:flashwareVersion="13/19 00" ees:swSupplier="TRW" ees:swSupplierCode="39"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000000C01</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343635343530353332</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12132343639303231303032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500A0F00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D1300</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F153091B00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540027</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550027</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C140409000006320413102007</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="RVC166" ees:hwSerialNumber="1402000085319">
+					<ees:extendedEcuId ees:ecuSnapshotId="RVC166" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="ITR_36798"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="ITR_36798"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="23-51"/>
+						<ees:freeText ees:content="(B84/3)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="000607" ees:hwObjectNumber="231 901 85 00" ees:hwSupplier="Magna" ees:hwSupplierCode="73" ees:hwVersion="11/44 00" ees:swVersion="12/48 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="11/26 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="000 902 81 16" ees:flashwareType="CODE" ees:flashwareVersion="12/48 00" ees:swSupplier="Magna" ees:swSupplierCode="73"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000060701</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132333139303138353030</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12130303039303238313136</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500B2C00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510C3000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530B1A00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540049</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550049</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C31343032303030303835333139</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="CTRLC_204" ees:hwSerialNumber="Ã‚Â¤Ã‚Â¤)Ã‚Â¤Ã‚Â¤Ã‚Â¤B$`Ã‚Â¤">
+					<ees:extendedEcuId ees:ecuSnapshotId="CTRLC_204" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="12791-82"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="12791-82"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="ITR_5602"/>
+						<ees:freeText ees:content="(A40/9)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="002500" ees:hwObjectNumber="246 901 35 02" ees:hwSupplier="Marquardt" ees:hwSupplierCode="67" ees:hwVersion="10/20 00" ees:swVersion="12/27 01"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="09/49 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="212 902 06 07" ees:flashwareType="CODE" ees:flashwareVersion="12/27 01" ees:swSupplier="Marquardt" ees:swSupplierCode="67"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000250001</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343639303133353032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12132313239303230363037</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500A1400</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510C1B01</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F153093100</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540043</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550043</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C00002914000042246005</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="DISPC_204" ees:hwSerialNumber="Ã‚Â¤Ã‚Â¤">
+					<ees:extendedEcuId ees:ecuSnapshotId="DISPC_204" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="12791-81"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="12791-81"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="ITR_4341"/>
+						<ees:freeText ees:content="(A40/8)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="6/0" ees:hwObjectNumber="246 901 59 02" ees:hwSupplier="Siemens VDO" ees:hwSupplierCode="121" ees:hwVersion="12/35" ees:swVersion="12/28 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareObjectNumber="000 000 00 00" ees:flashwareType="BOOT" ees:flashwareVersion="12/05 00" ees:swSupplier="Siemens VDO" ees:swSupplierCode="121"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="172 902 38 03" ees:flashwareType="CODE" ees:flashwareVersion="12/28 00" ees:swSupplier="Siemens VDO" ees:swSupplierCode="121"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>KWP</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x21E1"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x61E100002663</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x2177"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x617700000000000000000000000000000000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="HLC166" ees:hwSerialNumber="001410100210">
+					<ees:extendedEcuId ees:ecuSnapshotId="HLC166" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="9854-20"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="9854-20"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="9854-19"/>
+						<ees:freeText ees:content="(N71/1)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="00000D" ees:hwObjectNumber="166 901 58 01" ees:hwSupplier="Delphi" ees:hwSupplierCode="64" ees:hwVersion="11/30 00" ees:swVersion="12/49 01"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="11/14 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="166 902 08 05" ees:flashwareType="CODE" ees:flashwareVersion="12/49 01" ees:swSupplier="Delphi" ees:swSupplierCode="64"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000000D01</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11131363639303135383031</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12131363639303230383035</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500B1E00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510C3101</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530B0E00</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540040</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550040</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C303031343130313030323130</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="PTS246" ees:hwSerialNumber="Ã‚Â¤Ã‚Â¤Ã‚Â¤ Ã‚Â¤Ã‚Â¤Ã‚Â¤7Ã‚Â¤Ã‚Â¤">
+					<ees:extendedEcuId ees:ecuSnapshotId="PTS246" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="13082-1"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="13082-1"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="12692-61"/>
+						<ees:freeText ees:content="(N62)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="004302" ees:hwObjectNumber="246 901 56 02" ees:hwSupplier="Bosch" ees:hwSupplierCode="3" ees:hwVersion="11/21 00" ees:swVersion="13/24 00"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="11/21 00"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="246 902 09 02" ees:flashwareType="CODE" ees:flashwareVersion="13/24 00" ees:swSupplier="Bosch" ees:swSupplierCode="3"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10000430201</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343639303135363032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F12132343639303230393032</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500B1500</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D1800</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530B1500</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540003</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1550003</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C14031320000004370000</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+				<ees:ecu ees:diogenesName="CEPC242" ees:hwSerialNumber="007201409835">
+					<ees:extendedEcuId ees:ecuSnapshotId="CEPC242" ees:ecuType="SINGLE"/>
+					<ees:shortName ees:type="XD">
+						<ees:text ees:textId="13391-101"/>
+					</ees:shortName>
+					<ees:longName ees:type="XD">
+						<ees:text ees:textId="13391-101"/>
+						<ees:freeText ees:content="-"/>
+						<ees:text ees:textId="9691-561"/>
+						<ees:freeText ees:content="(N127)"/>
+					</ees:longName>
+					<ees:standardIdBlock ees:diagnosisVersion="02300F" ees:hwObjectNumber="242 901 87 00" ees:hwSupplier="Delphi" ees:hwSupplierCode="64" ees:hwVersion="13/04 00" ees:swVersion="13/17 01"/>
+					<ees:softwareIdBlock ees:countId="-1" ees:flashwareType="BOOT" ees:flashwareVersion="12/27 03"/>
+					<ees:softwareIdBlock ees:countId="0" ees:flashwareObjectNumber="242 904 13 00" ees:flashwareType="CODE" ees:flashwareVersion="13/17 01" ees:swSupplier="Delphi" ees:swSupplierCode="64"/>
+					<ees:softwareIdBlock ees:countId="1" ees:flashwareObjectNumber="242 902 98 00" ees:flashwareType="CODE" ees:flashwareVersion="14/28 02" ees:swSupplier="Delphi" ees:swSupplierCode="64"/>
+					<ees:softwareIdBlock ees:countId="2" ees:flashwareObjectNumber="242 903 24 00" ees:flashwareType="CODE" ees:flashwareVersion="14/33 01" ees:swSupplier="Delphi" ees:swSupplierCode="64"/>
+					<ees:flexibleEcuIdBlock ees:type="diagnosisProtocol">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="Diagnoseprotokoll"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>UDS</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuIdBlock>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F100"/>
+							<ees:freeText ees:content="Active Diagnostic Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F10002300F01</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F111"/>
+							<ees:freeText ees:content="Hardware Part Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F11132343239303138373030</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F121"/>
+							<ees:freeText ees:content="Software Part Numbers"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F121323432393034313330303234323930323938303032343239303332343030</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F150"/>
+							<ees:freeText ees:content="Hardware Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1500D0400</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F151"/>
+							<ees:freeText ees:content="Software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1510D11010E1C020E2101</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F153"/>
+							<ees:freeText ees:content="Boot software Version Information"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1530C1B03</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F154"/>
+							<ees:freeText ees:content="Hardware Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F1540040</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F155"/>
+							<ees:freeText ees:content="Software Supplier Identification"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F155004000400040</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x22F18C"/>
+							<ees:freeText ees:content="ECU Serial Number"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue>0x62F18C303037323031343039383335</ees:stringValue>
+						</ees:value>
+					</ees:flexibleEcuData>
+					<ees:flexibleEcuData ees:type="ReadDataByIdentifier">
+						<ees:name ees:type="DDA">
+							<ees:freeText ees:content="0x220105"/>
+						</ees:name>
+						<ees:value>
+							<ees:stringValue/>
+						</ees:value>
+					</ees:flexibleEcuData>
+				</ees:ecu>
+			</ees:ecuList>
+			<ees:flexibleData ees:type="242EV_PTGW1T_DATA">
+				<ees:item ees:type="PTGW1T_Serial_Number">
+					<ees:value>
+						<ees:stringValue>2429018800CCT14A0000015</ees:stringValue>
+					</ees:value>
+				</ees:item>
+				<ees:item ees:type="Power_Energy_Throughput">
+					<ees:valueWithUnit>
+						<ees:numericValue>
+							<ees:value>
+								<ees:integerValue>901</ees:integerValue>
+							</ees:value>
+							<ees:Unit>
+								<ees:SiUnitPraefix>k</ees:SiUnitPraefix>
+								<ees:SiUnitAtom ees:unit="W"/>
+							</ees:Unit>
+							<ees:Unit>
+								<ees:SiUnitAtom ees:unit="h"/>
+							</ees:Unit>
+						</ees:numericValue>
+					</ees:valueWithUnit>
+				</ees:item>
+				<ees:item ees:type="HV_Battery_SOC">
+					<ees:valueWithUnit>
+						<ees:numericValue>
+							<ees:value>
+								<ees:doubleValue>64.2</ees:doubleValue>
+							</ees:value>
+							<ees:Unit>
+								<ees:SiUnitAtom ees:unit="%"/>
+							</ees:Unit>
+						</ees:numericValue>
+					</ees:valueWithUnit>
+				</ees:item>
+				<ees:item ees:type="HV_Battery_Isolation_Resistance_Battery_Side_With_Open_Contactors">
+					<ees:valueWithUnit>
+						<ees:numericValue>
+							<ees:value>
+								<ees:doubleValue>2160.0</ees:doubleValue>
+							</ees:value>
+							<ees:Unit>
+								<ees:SiUnitPraefix>k</ees:SiUnitPraefix>
+								<ees:SiUnitAtom ees:unit="m"/>
+							</ees:Unit>
+						</ees:numericValue>
+					</ees:valueWithUnit>
+				</ees:item>
+				<ees:item ees:type="HV_Battery_Isolation_Resistance_With_Closed_Contactors">
+					<ees:valueWithUnit>
+						<ees:numericValue>
+							<ees:value>
+								<ees:doubleValue>5100.0</ees:doubleValue>
+							</ees:value>
+							<ees:Unit>
+								<ees:SiUnitPraefix>k</ees:SiUnitPraefix>
+								<ees:SiUnitAtom ees:unit="m"/>
+							</ees:Unit>
+						</ees:numericValue>
+					</ees:valueWithUnit>
+				</ees:item>
+				<ees:item ees:type="HV_Battery_Serial_Number">
+					<ees:value>
+						<ees:stringValue>2429018800CCT14A0000178</ees:stringValue>
+					</ees:value>
+				</ees:item>
+				<ees:item ees:type="PRES_Drive_Inverter_High_Voltage">
+					<ees:valueWithUnit>
+						<ees:numericValue>
+							<ees:value>
+								<ees:doubleValue>312.0</ees:doubleValue>
+							</ees:value>
+							<ees:Unit>
+								<ees:SiUnitAtom ees:unit="V"/>
+							</ees:Unit>
+						</ees:numericValue>
+					</ees:valueWithUnit>
+				</ees:item>
+				<ees:item ees:type="Onboard_Charger_High_Voltage_AC">
+					<ees:valueWithUnit>
+						<ees:numericValue>
+							<ees:value>
+								<ees:doubleValue>0.0</ees:doubleValue>
+							</ees:value>
+							<ees:Unit>
+								<ees:SiUnitAtom ees:unit="V"/>
+							</ees:Unit>
+						</ees:numericValue>
+					</ees:valueWithUnit>
+				</ees:item>
+				<ees:item ees:type="Charge_Port_Pilot_Status">
+					<ees:value>
+						<ees:stringValue>not present</ees:stringValue>
+					</ees:value>
+				</ees:item>
+				<ees:item ees:type="HV_Battery_Temperature">
+					<ees:valueWithUnit>
+						<ees:numericValue>
+							<ees:value>
+								<ees:doubleValue>64.4</ees:doubleValue>
+							</ees:value>
+							<ees:Unit>
+								<ees:SiUnitAtom ees:unit="m"/>
+							</ees:Unit>
+						</ees:numericValue>
+					</ees:valueWithUnit>
+				</ees:item>
+				<ees:item ees:type="HV_Battery_Serial_Number">
+					<ees:value>
+						<ees:stringValue>2429018800CCT14A0000178</ees:stringValue>
+					</ees:value>
+				</ees:item>
+				<ees:item ees:type="Inverter_Serial_Number">
+					<ees:value>
+						<ees:stringValue>2429018800CCT14C0040094</ees:stringValue>
+					</ees:value>
+				</ees:item>
+				<ees:item ees:type="PTGW1T_Serial_Number">
+					<ees:value>
+						<ees:stringValue>2429018800CCT14A0000015</ees:stringValue>
+					</ees:value>
+				</ees:item>
+				<ees:item ees:type="Thermal_Ctrl_Serial_Number">
+					<ees:value>
+						<ees:stringValue>2429018800CCT13L0004536</ees:stringValue>
+					</ees:value>
+				</ees:item>
+				<ees:item ees:type="OBC_Serial_Number">
+					<ees:value>
+						<ees:stringValue>2429018800CCT14B0046669</ees:stringValue>
+					</ees:value>
+				</ees:item>
+			</ees:flexibleData>
+			<ees:flexibleData ees:type="LastKollektive">
+				<ees:name ees:type="DDA">
+					<ees:freeText ees:content="Lastkollektive je SteuergerÃƒÂ¤t"/>
+				</ees:name>
+				<ees:item ees:type="CEPC242">
+					<ees:name ees:type="DDA">
+						<ees:freeText ees:content="ECU with request ID 0x000007E5"/>
+					</ees:name>
+					<ees:value>
+						<ees:stringValue/>
+					</ees:value>
+				</ees:item>
+			</ees:flexibleData>
+		</ees:eeSnapshot>
+	</ns1:payload>
+</ns1:vdpResponse>
