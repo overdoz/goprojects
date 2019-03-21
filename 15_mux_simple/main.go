@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io"
 	"net/http"
 )
@@ -8,7 +9,8 @@ import (
 
 
 func d(res http.ResponseWriter, req *http.Request) {
-	io.WriteString(res, "doggo dog dog")
+	// io.WriteString(res, "doggo dog dog")
+	fmt.Fprintf(res, "Hi there, I love %s!", req.URL.Path[0:])
 
 	// fmt.Fprintf(w, "<h1>any Code & %s </h1>", r.Method)
 }
@@ -23,7 +25,7 @@ func main() {
 
 
 	// dog route handles d function
-	http.HandleFunc("/dog/", d)
+	http.HandleFunc("/", d)
 
 	// car route handles c function
 	http.HandleFunc("/cat/", c)
