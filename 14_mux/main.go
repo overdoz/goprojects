@@ -1,22 +1,35 @@
 package main
 
 import (
-	"fmt"
+	"io"
 	"net/http"
 )
 
 type hotdog int
 
-func (m hotdog) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	w.Header().Set("Thanh", "Author of this page")
-	w.Header().Set("Content-Type", "text/plain; charset=utf-8")
+func (d hotdog) ServeHTTP(res http.ResponseWriter, req *http.Request) {
+	io.WriteString(res, "doggo dog dog")
 
+	// fmt.Fprintf(w, "<h1>any Code & %s </h1>", r.Method)
+}
 
+type hotcat int
 
-	fmt.Fprintf(w, "<h1>any Code & %s </h1>", r.Method)
+func (c hotcat) ServeHTTP(res http.ResponseWriter, req *http.Request) {
+	io.WriteString(res, "cat cat miau")
 }
 
 func main() {
 	var d hotdog
-	http.ListenAndServe(":8080", d)
+	var c hotcat
+
+	mux := http.NewServeMux()
+
+	// jede Route nach /dog/ führt zu dog
+	mux.Handle("/dog/", d)
+
+	// alles was an /cat angefügt wird sendet ein 404
+	mux.Handle("/cat/", c)
+
+	http.ListenAndServe(":8080", mux)
 }
