@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"text/template"
-	"log"
 )
 
 func main() {
@@ -30,6 +30,5 @@ func main() {
 	}
 
 	fmt.Println(message)
-
 
 }

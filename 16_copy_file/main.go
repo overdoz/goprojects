@@ -6,14 +6,10 @@ import (
 	"os"
 )
 
-
-
 func dog(res http.ResponseWriter, req *http.Request) {
 	res.Header().Set("Content-Type", "text/html; charset=utf-8")
 	io.WriteString(res, `<img src="/test.jpg">`)
 }
-
-
 
 func dogPic(res http.ResponseWriter, req *http.Request) {
 	f, err := os.Open("test.jpg")

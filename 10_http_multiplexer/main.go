@@ -58,11 +58,16 @@ func mux(conn net.Conn, ln string) {
 
 	//multiplexer
 	switch true {
-	case m == "GET" && u == "/": index(conn)
-	case m == "GET" && u == "/about": about(conn)
-	case m == "GET" && u == "/contact": contact(conn)
-	case m == "GET" && u == "/apply": apply(conn)
-	case m == "POST" && u == "/apply": applyProcess(conn)
+	case m == "GET" && u == "/":
+		index(conn)
+	case m == "GET" && u == "/about":
+		about(conn)
+	case m == "GET" && u == "/contact":
+		contact(conn)
+	case m == "GET" && u == "/apply":
+		apply(conn)
+	case m == "POST" && u == "/apply":
+		applyProcess(conn)
 	}
 }
 

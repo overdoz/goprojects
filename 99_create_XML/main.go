@@ -7,7 +7,6 @@ import (
 	// "os"
 )
 
-
 func createXML(result string) {
 	doc := etree.NewDocument()
 	doc.CreateProcInst("xml", `version="1.0" encoding="UTF-8" standalone="yes"`)
@@ -27,7 +26,6 @@ func createXML(result string) {
 	eesVersion := eeSnapshot.CreateElement("ns1:eesVersion")
 	eesVersion.CreateText("2.2.0")
 
-
 	trackingID := header.CreateElement("ns1:trackingID")
 	trackingID.CreateText("WDDVP9AB1EJ001221_Tassi2")
 	sourceID := header.CreateElement("ns1:trackingID")
@@ -46,13 +44,11 @@ func createXML(result string) {
 	subaction2 := action2.CreateElement("ns1:subaction")
 	subaction2.CreateAttr("ns1:name", "RAR")
 
-
 	eeSnapshot2 := requestHeader.CreateElement("ns1:eeSnapshot")
 	eesUid2 := eeSnapshot2.CreateElement("ns1:eesUid")
 	eesUid2.CreateText("WDDVP9AB1EJ001221")
 	eesVersion2 := eeSnapshot2.CreateElement("ns1:eesVersion")
 	eesVersion2.CreateText("2.2.0")
-
 
 	trackingID2 := requestHeader.CreateElement("ns1:trackingID")
 	trackingID2.CreateText("WDDVP9AB1EJ001221_Tassi2")
@@ -83,11 +79,8 @@ func createXML(result string) {
 
 	payload.CreateText(result)
 
-
 	doc.WriteToFile("./EES2.xml")
 }
-
-
 
 func main() {
 
