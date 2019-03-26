@@ -12,7 +12,10 @@ import (
 func main() {
 	http.HandleFunc("/", foo)
 	http.Handle("/favicon.ico", http.NotFoundHandler())
-	http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":8080", nil)
+	if err != nil {
+		panic(err)
+	}
 }
 
 func foo(w http.ResponseWriter, req *http.Request) {
@@ -53,11 +56,14 @@ func foo(w http.ResponseWriter, req *http.Request) {
 	}
 
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
-	io.WriteString(w, `
+	_, err := io.WriteString(w, `
 	<form method="POST" enctype="multipart/form-data">
 	<input type="file" name="q">
 	<input type="submit">
 	</form>
 	<br>
-	` + s)
+	`+s)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
 }
