@@ -3,6 +3,8 @@ package main
 import (
 	// "fmt"
 	"github.com/beevik/etree"
+	"strings"
+
 	// "io/ioutil"
 	// "os"
 )
@@ -84,4 +86,14 @@ func createXML(result string) {
 
 func main() {
 
+}
+
+func getEesUID(input string) string {
+	subs := strings.SplitAfterN(input, `"`, -1)
+	i := 0
+	for !strings.Contains(subs[i], " ees:uid=") {
+		i++
+	}
+	trim := subs[i+1]
+	return trim[:len(trim)-1]
 }
