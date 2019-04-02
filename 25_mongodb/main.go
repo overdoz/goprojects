@@ -12,6 +12,6 @@ func main() {
 	http.ListenAndServe("localhost:8080", r)
 }
 
-func index(w http.ResponseWriter, r http.Request, _ httprouter.Params) {
+func index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	fmt.Fprint(w, "Welcome!\n")
 }
