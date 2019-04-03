@@ -4,14 +4,17 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/julienschmidt/httprouter"
+	"gopkg.in/mgo.v2"
 	"goprojects/25_mongodb/models"
 	"net/http"
 )
 
-type UserController struct{}
+type UserController struct{
+	session *mgo.Session
+}
 
-func NewUserController() *UserController {
-	return &UserController{}
+func NewUserController(s *mgo.Session) *UserController {
+	return &UserController{s}
 }
 
 func (uc UserController) GetUser(w http.ResponseWriter, r *http.Request, p httprouter.Params) {

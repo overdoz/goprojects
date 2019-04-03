@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f57c018b-4a13-4ad0-b230-e4c5bfc5832d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/25_mongodb/controllers/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/25_mongodb/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/25_mongodb/controllers/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/25_mongodb/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/25_mongodb/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/25_mongodb/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="165">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
               <folding>
                 <element signature="e#14#75#0" expanded="true" />
               </folding>
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/25_mongodb/controllers/user.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="450">
+              <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
               <folding>
                 <element signature="e#14#131#0" expanded="true" />
               </folding>
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/23_cookies/main.go" />
         <option value="$PROJECT_DIR$/24_keyed_hash/main.go" />
         <option value="$PROJECT_DIR$/25_mongodb/models/user.go" />
-        <option value="$PROJECT_DIR$/25_mongodb/main.go" />
         <option value="$PROJECT_DIR$/25_mongodb/controllers/user.go" />
+        <option value="$PROJECT_DIR$/25_mongodb/main.go" />
       </list>
     </option>
   </component>
@@ -458,22 +458,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/25_mongodb/main.go">
+    <entry file="file://$PROJECT_DIR$/25_mongodb/controllers/user.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="450">
+          <caret line="30" column="45" lean-forward="true" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
           <folding>
-            <element signature="e#14#75#0" expanded="true" />
+            <element signature="e#14#131#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/25_mongodb/controllers/user.go">
+    <entry file="file://$PROJECT_DIR$/25_mongodb/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="165">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
           <folding>
-            <element signature="e#14#131#0" expanded="true" />
+            <element signature="e#14#75#0" expanded="true" />
           </folding>
         </state>
       </provider>

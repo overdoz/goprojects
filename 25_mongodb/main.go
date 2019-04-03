@@ -2,17 +2,29 @@ package main
 
 import (
 	"github.com/julienschmidt/httprouter"
+	"gopkg.in/mgo.v2"
 	"goprojects/25_mongodb/controllers"
 	"net/http"
 )
 
 func main() {
 	r := httprouter.New()
-	uc := controllers.NewUserController()
+	uc := controllers.NewUserController(getSession())
 	r.GET("/user/:id", uc.GetUser)
 	r.POST("/user", uc.CreateUser)
 	r.DELETE("/user/:id", uc.DeleteUser)
 	http.ListenAndServe("localhost:8080", r)
+}
+
+func getSession() *mgo.Session {
+	// connect to your local mongo
+	s, err := mgo.Dial("mongodb://localhost")
+
+	// check if connection error, is mongo running?
+	if err != nil {
+		panic(err)
+	}
+	return s
 }
 
 //func index(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
