@@ -1,11 +1,24 @@
 package main
 
 import (
+	"encoding/json"
+	"fmt"
+	"io/ioutil"
 	"log"
+	"net/http"
+	"strings"
 	"time"
 
 	tb "gopkg.in/tucnak/telebot.v2"
 )
+
+type Definitions struct {
+	Elements []Definition `json:"list"`
+}
+
+type Definition struct {
+	Info string `json:"definition"`
+}
 
 func main() {
 	b, err := tb.NewBot(tb.Settings{
@@ -30,6 +43,33 @@ func main() {
 
 	b.Handle("/whack", func(m *tb.Message) {
 		b.Send(m.Chat, "find dich auch whack")
+	})
+
+	b.Handle("/dict", func(m *tb.Message) {
+		temp := strings.Split(m.Payload, " ")
+		payload := strings.Join(temp, "+")
+		req, err := http.NewRequest("GET", "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term="+payload, strings.NewReader(""))
+		if err != nil {
+			return
+		}
+		req.Header.Set("X-RapidAPI-Host", "mashape-community-urban-dictionary.p.rapidapi.com")
+		req.Header.Set("X-RapidAPI-Key",  "c10834fe35mshdc5083d2e82abf8p124944jsnd50094792e4c")
+
+		client := &http.Client{}
+		res, err := client.Do(req)
+
+
+		body, err := ioutil.ReadAll(res.Body)
+
+		fmt.Println(string(body))
+
+		var d Definitions
+
+		_ = json.Unmarshal(body, &d)
+		fmt.Println(d.Elements[0].Info)
+		b.Send(m.Chat, d.Elements[0].Info)
+		b.Send(m.Chat, d.Elements[1].Info)
+		b.Send(m.Chat, d.Elements[2].Info)
 	})
 
 	we := tb.InlineButton{
@@ -65,7 +105,7 @@ func main() {
 	})
 	b.Handle(&ko, func(c *tb.Callback) {
 		// on inline button pressed (callback!)
-
+		fmt.Println(ko.Text)
 		// always respond!
 		b.Respond(c, &tb.CallbackResponse{Text: "Bin unterwegs!"})
 	})
