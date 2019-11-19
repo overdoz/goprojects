@@ -9,6 +9,7 @@ import (
 	"os/exec"
 	"strings"
 	"time"
+	"unicode/utf8"
 
 	tb "gopkg.in/tucnak/telebot.v2"
 )
@@ -21,7 +22,10 @@ type Definition struct {
 	Info string `json:"definition"`
 }
 
+
+
 func main() {
+
 	var todos []string
 
 
@@ -37,64 +41,78 @@ func main() {
 		return
 	}
 
-	b.Handle("/hello", func(m *tb.Message) {
-		b.Send(m.Chat, "WHAAAATUP BRAA")
+
+	//################## insert quote ##############################################################################
+
+	b.Handle("/quote", func(m *tb.Message) {
+		maxCharsPerLine := 35
+		stringArray := strings.Split(m.Payload, " ")
+		longestString := 0
+
+		var in []int
+		q := make(map[string]string)
+
+		for i, s := range stringArray {
+			if strings.Contains(s, ":") {
+				in = append(in, i)
+				if utf8.RuneCountInString(s) > longestString {
+					longestString = utf8.RuneCountInString(s)
+				}
+			}
+		}
+
+
+		for i := 0; i < len(in); i++ {
+			if i < len(in)-1 {
+				currentName := in[i]
+				nextName := in[i+1]
+				q[stringArray[currentName]] = strings.Join(stringArray[currentName+1:nextName], " ")
+
+			} else {
+				currentName := in[i]
+				q[stringArray[currentName]] = strings.Join(stringArray[currentName+1:], " ")
+			}
+		}
+
+		outputString := ""
+
+
+
+		for i, s := range q {
+			outputString = outputString + i + "\n" + formatString(s, maxCharsPerLine, longestString) + "\n\n"
+		}
+
+		fmt.Println(outputString)
+
+		// printLKT(outputString)
+
 	})
 
-	b.Handle("/fuckyou", func(m *tb.Message) {
-		b.Send(m.Chat, "FUCK YOU TOOOOO 3===o")
-	})
 
-	b.Handle("/whack", func(m *tb.Message) {
-		b.Send(m.Chat, "find dich auch whack")
-	})
+
+	//################## add to shop ######################################################################################
 
 	b.Handle("/shop", func(m *tb.Message) {
-	/*	temp := strings.Split(m.Payload, " ")
-		for i, s := range temp {
-			if strings.Contains(s, ":") {
-
-			}
-		}*/
-
-		// Todo Liste erstellen
-		todos = append(todos, "- " + m.Payload)
-
+		temp := strings.Split(m.Payload, " ")
+		for _, v := range temp {
+			todos = append(todos, "- " + v)
+		}
 
 	})
+
+
+	//################## print shopping list ##############################################################################
 
 	b.Handle("/print", func(m *tb.Message) {
 		l := "Bitte bring folgendes mit:\n_________________\n\n" + strings.Join(todos[:], "\n")
 		note := "\n\n\n.~~~~.\ni====i_\n|cccc|_)\n|cccc|\n`-==-'\n\nund bei Bedarf etwas Bier"
-		printText := []byte(l + note)
-		err := ioutil.WriteFile("./test.txt", printText, 0644)
-		if err != nil {
-			log.Fatal(err)
-		}
-
-		// sh := `lp test.txt -d LKT`
-		sh := `echo "Hello World"`
-		args := strings.Split(sh, " ")
-
-		cmd := exec.Command(args[0], args[1:]...)
-		b, err := cmd.CombinedOutput()
-
-		if err != nil {
-			log.Println(err)
-		}
-		fmt.Printf("%s \n", b)
-/*
-		cmd.Stdin = strings.NewReader("some input")
-		var out bytes.Buffer
-		cmd.Stdout = &out
-		err = cmd.Run()
-		if err != nil {
-			log.Fatal(err)
-		}*/
-		todos = make([]string, 20)
+		printLKT(l + note)
 
 
 	})
+
+
+	//################## look up urban dict ################################################################################
 
 	b.Handle("/dict", func(m *tb.Message) {
 		temp := strings.Split(m.Payload, " ")
@@ -175,4 +193,52 @@ func main() {
 	})
 
 	b.Start()
+}
+
+
+func printLKT(t string) {
+	printText := []byte(t)
+	err := ioutil.WriteFile("./test.txt", printText, 0644)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	sh := `lp test.txt -d LKT`
+	// sh := `echo "Hello World"`
+	args := strings.Split(sh, " ")
+
+	cmd := exec.Command(args[0], args[1:]...)
+	b, err := cmd.CombinedOutput()
+
+	if err != nil {
+		log.Println(err)
+	}
+	fmt.Printf("%s \n", b)
+}
+
+func formatString(text string, maxLen, longest int) string {
+	output := ""
+	col := 0
+	max := maxLen - longest
+	tempText := strings.Split(text, " ")
+	// fmt.Println(tempText)
+
+	for _, v := range tempText {
+		if col == 0 {
+			output = output + strings.Repeat(" ", longest)
+			col += longest
+		} else if (col + utf8.RuneCountInString(v)) < max {
+			output = output + v + " "
+			col += utf8.RuneCountInString(v) + 1
+		} else {
+			output = output + "\n" + strings.Repeat(" ", longest) + v + " "
+			col = longest + utf8.RuneCountInString(v) + 1
+		}
+	}
+	// fmt.Println(output)
+
+	return output
+
+
+	//output = output + strings.Repeat(" ", longest)
 }
