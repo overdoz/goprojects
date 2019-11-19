@@ -1,7 +1,6 @@
 package main
 
 import (
-	"bytes"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
@@ -72,14 +71,26 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		cmd := exec.Command("cat", "test.txt")
+
+		// sh := `lp test.txt -d LKT`
+		sh := `echo "Hello World"`
+		args := strings.Split(sh, " ")
+
+		cmd := exec.Command(args[0], args[1:]...)
+		b, err := cmd.CombinedOutput()
+
+		if err != nil {
+			log.Println(err)
+		}
+		fmt.Printf("%s \n", b)
+/*
 		cmd.Stdin = strings.NewReader("some input")
 		var out bytes.Buffer
 		cmd.Stdout = &out
 		err = cmd.Run()
 		if err != nil {
 			log.Fatal(err)
-		}
+		}*/
 		todos = make([]string, 20)
 
 

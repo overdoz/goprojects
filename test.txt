@@ -1,28 +1,9 @@
 Bitte bring folgendes mit:
 _________________
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 - bus
 - bahn
+- taxi
 
 
 .~~~~.

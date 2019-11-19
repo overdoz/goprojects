@@ -4,6 +4,7 @@
     <list default="true" id="f57c018b-4a13-4ad0-b230-e4c5bfc5832d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/98_GoBot/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/98_GoBot/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,35 +25,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TkOE4L2AqyWSZjEr830fDsLSC5" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="goprojects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goprojects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goprojects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goprojects" type="462c0819:PsiDirectoryNode" />
-              <item name="01_template" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goprojects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="goprojects" type="462c0819:PsiDirectoryNode" />
-              <item name="98_GoBot" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="WebServerToolWindowFactoryState" value="false" />
