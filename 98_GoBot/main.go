@@ -1,11 +1,13 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os/exec"
 	"strings"
 	"time"
 
@@ -21,6 +23,9 @@ type Definition struct {
 }
 
 func main() {
+	var todos []string
+
+
 	b, err := tb.NewBot(tb.Settings{
 		Token:  "854869015:AAGS9yhBdhkzKBsAswLZEi38H949yvOvx5I",
 		// You can also set custom API URL. If field is empty it equals to "https://api.telegram.org"
@@ -43,6 +48,41 @@ func main() {
 
 	b.Handle("/whack", func(m *tb.Message) {
 		b.Send(m.Chat, "find dich auch whack")
+	})
+
+	b.Handle("/shop", func(m *tb.Message) {
+	/*	temp := strings.Split(m.Payload, " ")
+		for i, s := range temp {
+			if strings.Contains(s, ":") {
+
+			}
+		}*/
+
+		// Todo Liste erstellen
+		todos = append(todos, "- " + m.Payload)
+
+
+	})
+
+	b.Handle("/print", func(m *tb.Message) {
+		l := "Bitte bring folgendes mit:\n_________________\n\n" + strings.Join(todos[:], "\n")
+		note := "\n\n\n.~~~~.\ni====i_\n|cccc|_)\n|cccc|\n`-==-'\n\nund bei Bedarf etwas Bier"
+		printText := []byte(l + note)
+		err := ioutil.WriteFile("./test.txt", printText, 0644)
+		if err != nil {
+			log.Fatal(err)
+		}
+		cmd := exec.Command("cat", "test.txt")
+		cmd.Stdin = strings.NewReader("some input")
+		var out bytes.Buffer
+		cmd.Stdout = &out
+		err = cmd.Run()
+		if err != nil {
+			log.Fatal(err)
+		}
+		todos = make([]string, 20)
+
+
 	})
 
 	b.Handle("/dict", func(m *tb.Message) {
