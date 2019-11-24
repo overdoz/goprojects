@@ -2,17 +2,22 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"github.com/disintegration/imaging"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
 	"os/exec"
+	"regexp"
 	"strings"
 	"time"
 	"unicode/utf8"
 )
+
+const FILENAME_TXT = "test.txt"
+const FILENAME_PNG = "test.png"
+const LINE_WIDTH = 32
+
 
 
 type Message struct {
@@ -20,44 +25,90 @@ type Message struct {
 }
 
 func home(w http.ResponseWriter, r *http.Request) {
+
+	// http method
 	switch r.Method {
 
+	// serve React PWA
+	// https://github.com/overdoz/airprinter
 	case http.MethodGet:
+
 		// w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		dir, _ := os.Getwd()
 		http.FileServer(http.Dir(dir)).ServeHTTP(w,r)
 
+	// two options to send files
+	// @param text: send formatted text
+	// @param file: send multipart/form-data
+	// TODO: right now you either send a file or plain text, but not combined
 	case http.MethodPost:
 		if err := r.ParseForm(); err != nil {
-			_, _ = fmt.Fprintf(w, "ParseForm() err: %v", err)
+			log.Printf("ParseForm() err: %v", err)
 			return
 		}
+
+		// POST Request params
 		re := r.FormValue("type")
 
-
+		// determine if type =? text or file
 		switch re {
+
+		// text will be formatted correctly
+		// print timestamp at the end of the sheet
 		case "text":
 			decoder := json.NewDecoder(r.Body)
 			var m Message
 			err := decoder.Decode(&m)
 			if err != nil {
-				panic(err)
+				log.Fatal("JSON Decoder failed: ", err)
 			}
+
 			t := time.Now().Format("2006-01-02 15:04:05")
 
-			sp := strings.Split(m.Text, " ")[0]
+			sp := strings.Split(m.Text, " ")
 
-			if strings.Contains(sp, ":") {
-				log.Print(findNames(m.Text))
-				printLKT(findNames(m.Text) + "\n\n\n\n         " + t + "\n\n   ", "test.txt")
+			contains := false
+
+			if strings.Contains(sp[0], ":") {
+				g := m.Text
+				// scan date
+
+				for i, v := range sp {
+					re, _ := regexp.MatchString(`\d{4}-\d{2}-\d{2}`, v)
+					if re {
+						contains = true
+
+						// extract given date
+						ownDate := v
+
+						// cut date from text
+						splitted := strings.Split(g, " ")
+						splitted = splitted[:i]
+						g = strings.Join(splitted, " ")	//g[:i]
+
+						output := findNames(g) + "\n\n\n\n                  " + ownDate
+
+						log.Print("\n " + output)
+
+						// send to printer
+						printLKT(output, FILENAME_TXT)
+					}
+				}
+
+				if !contains {
+					printLKT(findNames(g) + "\n\n\n\n         " + t, FILENAME_TXT)
+				}
+
 			} else {
-				log.Print(m.Text)
-				printLKT(m.Text + "\n\n\n\n         " + t + "\n\n   ", "test.txt")
+				log.Print("\n " + m.Text)
+				printLKT(m.Text + "\n\n\n\n         " + t + "\n\n   ", FILENAME_TXT)
 			}
+
+			// redirect to previous site
 			http.Redirect(w, r, r.Header.Get("Referer"), 302)
 
+		// POST Request params (type = "files")
 		case "files":
-			fileName := "test.png"
 
 			log.Println("processing image...")
 
@@ -74,47 +125,39 @@ func home(w http.ResponseWriter, r *http.Request) {
 			}
 
 			// create png file
-			tempFile, _ := os.Create(fileName)
+			tempFile, _ := os.Create(FILENAME_PNG)
 
 			// read request body from client
 			fileBytes, err := ioutil.ReadAll(file)
 			if err != nil {
-				fmt.Println(err)
+				log.Println("Cannot read request body: ", err)
 			}
 
 			// write incoming file to new file
 			_, err = tempFile.Write(fileBytes)
 			if err != nil {
-				fmt.Printf("write error", err)
+				log.Printf("write error", err)
 			}
 			// close temporary file
 			err = tempFile.Close()
 			if err != nil {
-				fmt.Printf("could not open", err)
+				log.Printf("could not open", err)
 			}
-			// ------------------------------------------
+
 			// Read image from file that already exists
-			src, _ := imaging.Open(fileName)
-
+			src, _ := imaging.Open(FILENAME_PNG)
 			src = imaging.Resize(src, 800, 0, imaging.Lanczos)
-
 			src = imaging.AdjustBrightness(src, 30)
-
 			src = imaging.Grayscale(src)
-
-			// src = imaging.AdjustContrast(src, -20)
-
 			src = imaging.AdjustContrast(src, -20)
-
 			src = imaging.AdjustGamma(src, 0.75)
-
 			err = imaging.Save(src, "test.png")
 			if err != nil {
-				log.Fatalf("failed to save image: %v", err)
+				log.Fatalf("failed to save image after edit: %v", err)
 			}
 
 			// print the png file
-			printPic(fileName)
+			printPic(FILENAME_PNG)
 
 			// redirect to previous site
 			http.Redirect(w, r, r.Header.Get("Referer"), 302)
@@ -123,9 +166,6 @@ func home(w http.ResponseWriter, r *http.Request) {
 			http.Redirect(w, r, r.Header.Get("Referer"), 302)
 			log.Print("couldn't read query")
 		}
-
-
-
 	default:
 		log.Print("couldn't handle request")
 	}
@@ -142,11 +182,11 @@ func main() {
 
 	err := http.ListenAndServe(port, nil)
 	if err != nil {
-		log.Print("line 112")
 		log.Fatal(err)
 	}
 }
 
+// file should have the ending .txt
 func printLKT(t, file string) {
 	printText := []byte(t)
 
@@ -155,21 +195,23 @@ func printLKT(t, file string) {
 		log.Fatal(err)
 	}
 
-	// sh := `lp test.txt -d LKT`
+	// print command to LKT
 	sh := "lp " + file + " -d LKT"
 
 	args := strings.Split(sh, " ")
 
 	cmd := exec.Command(args[0], args[1:]...)
 
+	// execute command
 	b, err := cmd.CombinedOutput()
 
 	if err != nil {
 		log.Println(err)
 	}
-	fmt.Printf("%s \n", b)
+	log.Printf("%s \n", b)
 }
 
+// file should have the ending .png
 func printPic(file string) {
 	sh := "lp " + file + " -d LKT"
 
@@ -182,20 +224,26 @@ func printPic(file string) {
 	if err != nil {
 		log.Println(err)
 	}
-	fmt.Printf("%s \n", b)
+	log.Printf("%s \n", b)
 }
 
+
 func findNames(s string) string {
-	maxCharsPerLine := 35
 	stringArray := strings.Split(s, " ")
 	longestString := 0
+	outputString := ""
 
+	// slice without predefined length
 	var in []int
+
+	// [name]quote
 	q := make(map[string]string)
 
-	// find longstes name
+	// find longest name
 	for i, s := range stringArray {
 		if strings.Contains(s, ":") {
+
+			// save index of names
 			in = append(in, i)
 			if utf8.RuneCountInString(s) > longestString {
 				longestString = utf8.RuneCountInString(s)
@@ -203,42 +251,39 @@ func findNames(s string) string {
 		}
 	}
 
-
+	// connect quote to name
 	for i := 0; i < len(in); i++ {
 		if i < len(in)-1 {
 			currentName := in[i]
 			nextName := in[i+1]
 
 			// connect quote to person
+			// +1 to cut name at the beginning
 			q[stringArray[currentName]] = strings.Join(stringArray[currentName+1:nextName], " ")
-
 		} else {
 			currentName := in[i]
 			q[stringArray[currentName]] = strings.Join(stringArray[currentName+1:], " ")
 		}
 	}
 
-	outputString := ""
-
-
-
+	// concat names and quotes
 	for i, s := range q {
-		outputString = outputString + i + "\n" + formatString(s, maxCharsPerLine, longestString) + "\n\n"
+		outputString = outputString + i + "\n" + formatString(s, LINE_WIDTH, longestString) + "\n\n"
 	}
 
 	return outputString
 }
 
+// adjust width
 func formatString(text string, maxLen, longest int) string {
 	output := ""
 	col := 0
 	max := maxLen - longest
 	tempText := strings.Split(text, " ")
-	// fmt.Println(tempText)
 
 	for _, v := range tempText {
 		if col == 0 {
-			output = output + strings.Repeat(" ", longest)
+			output = output + strings.Repeat(" ", longest) + v + " "
 			col += longest
 		} else if (col + utf8.RuneCountInString(v)) < max {
 			output = output + v + " "
@@ -248,10 +293,5 @@ func formatString(text string, maxLen, longest int) string {
 			col = longest + utf8.RuneCountInString(v) + 1
 		}
 	}
-	// fmt.Println(output)
-
 	return output
-
-
-	//output = output + strings.Repeat(" ", longest)
 }
