@@ -96,6 +96,7 @@ func handlePic(w http.ResponseWriter, r *http.Request) {
 func home(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html; charset=utf-8")
 	http.FileServer(http.Dir(".")).ServeHTTP(w, r)
+	//http.Handle("/", http.StripPrefix("/", h))
 }
 
 func getText(w http.ResponseWriter, r *http.Request) {
@@ -118,7 +119,8 @@ func main() {
 	r.HandleFunc("/", home).Methods("GET")
 	r.HandleFunc("/", getText).Methods("POST")
 	r.HandleFunc("/upload", handlePic).Methods("POST")
-	err := http.ListenAndServeTLS(":8080", "https-server.crt", "https-server.key", nil);
+	//err := http.ListenAndServeTLS(":8080", "https-server.crt", "https-server.key", nil);
+	err := http.ListenAndServe(":8080", r)
 	if err != nil {
 		log.Fatal(err)
 	}

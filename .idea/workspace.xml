@@ -2,35 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f57c018b-4a13-4ad0-b230-e4c5bfc5832d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/96_convert_to_bmp/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/95_http_server/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/97_server_plus_printer/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/97_server_plus_printer/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/97_server_plus_printer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/97_server_plus_printer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/index2.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/97_server_plus_printer/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/97_server_plus_printer/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/97_server_plus_printer/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/precache-manifest.2514c6bba686c238304faaa95287c6d4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/precache-manifest.6901bddeb691e34b59983a5c7dde80f2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/precache-manifest.edaf30130fdf192a4ce080f7ea4183fc.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/97_server_plus_printer/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/97_server_plus_printer/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/css/main.eab4e6a8.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/css/main.eab4e6a8.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/js/2.1b495d27.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/js/2.1b495d27.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/js/main.4799e762.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/js/main.4799e762.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/js/main.fda0e436.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/js/main.fda0e436.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goprojects.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/css/main.d5cd0216.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/css/main.d5cd0216.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/js/2.25ee9754.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/js/2.25ee9754.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/js/main.b361693a.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/97_server_plus_printer/static/js/main.b361693a.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EES2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/https-server.crt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/https-server.key" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.9e8252fe.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.9e8252fe.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/2.1b495d27.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/2.1b495d27.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.117e56c5.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.117e56c5.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.287453ef.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/main.287453ef.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/precache-manifest.58d04b1248a3e02130cd5b9be8996ae4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/precache-manifest.edaf30130fdf192a4ce080f7ea4183fc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.d5cd0216.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.d5cd0216.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/2.25ee9754.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/2.25ee9754.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.b361693a.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/main.b361693a.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/runtime-main.43259f93.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/runtime-main.43259f93.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/media/white-construction-paper-texture.41991707.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.BMP" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.png" beforeDir="false" afterPath="$PROJECT_DIR$/test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +81,7 @@
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../printer" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -77,6 +91,9 @@
       <recent name="$PROJECT_DIR$/96_convert_to_bmp" />
       <recent name="C:\Users\TL05566\go\src\goprojects\" />
       <recent name="C:\Users\TL05566\go\src\goprojects\29_testing" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../printer" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -91,7 +108,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (1)">
+  <component name="RunManager" selected="Go Build.go build practice_go/95_http_server">
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="goprojects" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -107,6 +124,15 @@
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/98_GoBot/main.go" />
       <package value="goprojects" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build practice_go/95_http_server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="goprojects" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/95_http_server/main.go" />
+      <package value="practice_go/95_http_server" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -132,6 +158,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build practice_go/95_http_server" />
         <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build practice_go/96_convert_to_bmp" />
         <item itemvalue="Go Build.go build main.go" />
