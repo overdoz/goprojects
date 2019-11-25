@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"github.com/disintegration/imaging"
+	"github.com/jung-kurt/gofpdf"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -23,6 +24,7 @@ const LINE_WIDTH = 32
 type Message struct {
 	Text string
 }
+
 
 func home(w http.ResponseWriter, r *http.Request) {
 
@@ -69,9 +71,9 @@ func home(w http.ResponseWriter, r *http.Request) {
 
 			contains := false
 
+			// if first string is a name followed by an ":", the text is declared as quote
 			if strings.Contains(sp[0], ":") {
 				g := m.Text
-				// scan date
 
 				for i, v := range sp {
 					re, _ := regexp.MatchString(`\d{4}-\d{2}-\d{2}`, v)
@@ -94,16 +96,14 @@ func home(w http.ResponseWriter, r *http.Request) {
 						printLKT(output, FILENAME_TXT)
 					}
 				}
-
+				// print text with current timestamp
 				if !contains {
 					printLKT(findNames(g) + "\n\n\n\n         " + t, FILENAME_TXT)
 				}
-
 			} else {
 				log.Print("\n " + m.Text)
 				printLKT(m.Text + "\n\n\n\n         " + t + "\n\n   ", FILENAME_TXT)
 			}
-
 			// redirect to previous site
 			http.Redirect(w, r, r.Header.Get("Referer"), 302)
 
@@ -145,13 +145,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 			}
 
 			// Read image from file that already exists
-			src, _ := imaging.Open(FILENAME_PNG)
-			src = imaging.Resize(src, 800, 0, imaging.Lanczos)
-			src = imaging.AdjustBrightness(src, 30)
-			src = imaging.Grayscale(src)
-			src = imaging.AdjustContrast(src, -20)
-			src = imaging.AdjustGamma(src, 0.75)
-			err = imaging.Save(src, "test.png")
+			err = adjustImage(FILENAME_PNG)
 			if err != nil {
 				log.Fatalf("failed to save image after edit: %v", err)
 			}
@@ -172,19 +166,6 @@ func home(w http.ResponseWriter, r *http.Request) {
 }
 
 
-
-func main() {
-	port := ":8001"
-
-	http.HandleFunc("/", home)
-
-	log.Println("listening on port " + port)
-
-	err := http.ListenAndServe(port, nil)
-	if err != nil {
-		log.Fatal(err)
-	}
-}
 
 // file should have the ending .txt
 func printLKT(t, file string) {
@@ -213,7 +194,7 @@ func printLKT(t, file string) {
 
 // file should have the ending .png
 func printPic(file string) {
-	sh := "lp " + file + " -d LKT"
+/*	sh := "lp " + file + " -d LKT"
 
 	args := strings.Split(sh, " ")
 
@@ -224,14 +205,38 @@ func printPic(file string) {
 	if err != nil {
 		log.Println(err)
 	}
-	log.Printf("%s \n", b)
+	log.Printf("%s \n", b)*/
+	pdf := gofpdf.NewCustom(&gofpdf.InitType{
+		UnitStr:    "cm",
+		Size:       gofpdf.SizeType{Wd: 7.1, Ht: 1},
+	})
+
+	pdf.AddPage()
+	pdf.SetFont("Arial", "B", 16)
+	pdf.Cell(40, 10, "Hello, world")
+	err := pdf.OutputFileAndClose("hello.pdf")
+	if err != nil {
+		//
+	}
+
+	sh := "lp hello.pdf -d LKT"
+
+	args := strings.Split(sh, " ")
+
+	cmd := exec.Command(args[0], args[1:]...)
+
+	_, err = cmd.CombinedOutput()
+
+	if err != nil {
+		log.Println(err)
+	}
+
 }
 
-
 func findNames(s string) string {
-	stringArray := strings.Split(s, " ")
 	longestString := 0
 	outputString := ""
+	stringArray := strings.Split(s, " ")
 
 	// slice without predefined length
 	var in []int
@@ -242,7 +247,6 @@ func findNames(s string) string {
 	// find longest name
 	for i, s := range stringArray {
 		if strings.Contains(s, ":") {
-
 			// save index of names
 			in = append(in, i)
 			if utf8.RuneCountInString(s) > longestString {
@@ -256,11 +260,11 @@ func findNames(s string) string {
 		if i < len(in)-1 {
 			currentName := in[i]
 			nextName := in[i+1]
-
 			// connect quote to person
 			// +1 to cut name at the beginning
 			q[stringArray[currentName]] = strings.Join(stringArray[currentName+1:nextName], " ")
 		} else {
+			// if it's the last person, take the rest of the string
 			currentName := in[i]
 			q[stringArray[currentName]] = strings.Join(stringArray[currentName+1:], " ")
 		}
@@ -270,9 +274,9 @@ func findNames(s string) string {
 	for i, s := range q {
 		outputString = outputString + i + "\n" + formatString(s, LINE_WIDTH, longestString) + "\n\n"
 	}
-
 	return outputString
 }
+
 
 // adjust width
 func formatString(text string, maxLen, longest int) string {
@@ -294,4 +298,28 @@ func formatString(text string, maxLen, longest int) string {
 		}
 	}
 	return output
+}
+
+// edit immage
+func adjustImage(file string) error {
+	src, _ := imaging.Open(file)
+	src = imaging.Resize(src, 800, 0, imaging.Lanczos)
+	src = imaging.AdjustBrightness(src, 30)
+	src = imaging.Grayscale(src)
+	src = imaging.AdjustContrast(src, -20)
+	src = imaging.AdjustGamma(src, 0.75)
+	return imaging.Save(src, FILENAME_PNG)
+}
+
+func main() {
+	port := ":8001"
+
+	http.HandleFunc("/", home)
+
+	log.Println("listening on port " + port)
+
+	err := http.ListenAndServe(port, nil)
+	if err != nil {
+		log.Fatal(err)
+	}
 }
