@@ -211,7 +211,7 @@ func printPic(file string) {
 		Size:       gofpdf.SizeType{Wd: 7.1, Ht: 1},
 	})
 
-	pdf.AddPage()
+	//pdf.AddPage()
 	pdf.SetFont("Arial", "B", 16)
 	pdf.Cell(40, 10, "Hello, world")
 	err := pdf.OutputFileAndClose("hello.pdf")
