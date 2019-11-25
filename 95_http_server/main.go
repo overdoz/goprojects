@@ -3,7 +3,6 @@ package main
 import (
 	"encoding/json"
 	"github.com/disintegration/imaging"
-	"github.com/jung-kurt/gofpdf"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -194,42 +193,18 @@ func printLKT(t, file string) {
 
 // file should have the ending .png
 func printPic(file string) {
-/*	sh := "lp " + file + " -d LKT"
+    sh := "lp " + file + " -d LKT"
 
 	args := strings.Split(sh, " ")
 
 	cmd := exec.Command(args[0], args[1:]...)
 
-	b, err := cmd.CombinedOutput()
+	_, err := cmd.CombinedOutput()
 
 	if err != nil {
 		log.Println(err)
 	}
-	log.Printf("%s \n", b)*/
-	pdf := gofpdf.NewCustom(&gofpdf.InitType{
-		UnitStr:    "cm",
-		Size:       gofpdf.SizeType{Wd: 7.1, Ht: 1},
-	})
 
-	//pdf.AddPage()
-	pdf.SetFont("Arial", "B", 16)
-	pdf.Cell(40, 10, "Hello, world")
-	err := pdf.OutputFileAndClose("hello.pdf")
-	if err != nil {
-		//
-	}
-
-	sh := "lp hello.pdf -d LKT -o media=Custom.7x1cm"
-
-	args := strings.Split(sh, " ")
-
-	cmd := exec.Command(args[0], args[1:]...)
-
-	_, err = cmd.CombinedOutput()
-
-	if err != nil {
-		log.Println(err)
-	}
 
 }
 
