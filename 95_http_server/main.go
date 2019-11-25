@@ -16,7 +16,7 @@ import (
 
 const FILENAME_TXT = "test.txt"
 const FILENAME_PNG = "test.png"
-const LINE_WIDTH = 32
+const LINE_WIDTH = 29
 
 
 
@@ -101,7 +101,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 				}
 			} else {
 				log.Print("\n " + m.Text)
-				printLKT(m.Text + "\n\n\n\n         " + t + "\n\n   ", FILENAME_TXT)
+				printLKT(formatString(m.Text, LINE_WIDTH, 0) + "\n\n\n\n         " + t + "\n\n   ", FILENAME_TXT)
 			}
 			// redirect to previous site
 			http.Redirect(w, r, r.Header.Get("Referer"), 302)
