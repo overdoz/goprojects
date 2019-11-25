@@ -219,7 +219,7 @@ func printPic(file string) {
 		//
 	}
 
-	sh := "lp hello.pdf -d LKT"
+	sh := "lp hello.pdf -d LKT -o media=Custom.7x1cm"
 
 	args := strings.Split(sh, " ")
 
