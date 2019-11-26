@@ -3,23 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f57c018b-4a13-4ad0-b230-e4c5bfc5832d" name="Default Changelist" comment="ngfnhf">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/95_http_server/asset-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/95_http_server/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/95_http_server/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/95_http_server/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/95_http_server/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/precache-manifest.b494f108e504e79c253f317e99441b5d.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/95_http_server/service-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/static/css/main.fe1f0db9.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/static/css/main.fe1f0db9.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/static/js/2.7e31a60a.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/static/js/2.7e31a60a.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/static/js/main.fa8a7d58.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/static/js/main.fa8a7d58.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/test.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/test2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/test3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/95_http_server/tumblr_ocjenausqs1sj6bxfo1_1280.jpeg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
